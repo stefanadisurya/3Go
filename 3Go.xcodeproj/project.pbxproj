@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F370890F261C56DB0034E509 /* MiniExercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F370890E261C56DB0034E509 /* MiniExercise.storyboard */; };
+		F3708915261C5B2C0034E509 /* TableMiniExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3708914261C5B2C0034E509 /* TableMiniExerciseViewController.swift */; };
+		F3708918261C5E4A0034E509 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3708917261C5E4A0034E509 /* CustomCell.swift */; };
+		F370891B261C65930034E509 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370891A261C65930034E509 /* AnswerCell.swift */; };
 		F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E2F261ADDC000FA01D0 /* AppDelegate.swift */; };
 		F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E31261ADDC000FA01D0 /* SceneDelegate.swift */; };
 		F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E33261ADDC000FA01D0 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F370890E261C56DB0034E509 /* MiniExercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MiniExercise.storyboard; sourceTree = "<group>"; };
+		F3708914261C5B2C0034E509 /* TableMiniExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMiniExerciseViewController.swift; sourceTree = "<group>"; };
+		F3708917261C5E4A0034E509 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		F370891A261C65930034E509 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		F3FE6E2C261ADDC000FA01D0 /* 3Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FE6E2F261ADDC000FA01D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3FE6E31261ADDC000FA01D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3708911261C56EE0034E509 /* Mini Exercise View */ = {
+			isa = PBXGroup;
+			children = (
+				F370890E261C56DB0034E509 /* MiniExercise.storyboard */,
+			);
+			path = "Mini Exercise View";
+			sourceTree = "<group>";
+		};
+		F3708912261C570B0034E509 /* Mini Exercise Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3708914261C5B2C0034E509 /* TableMiniExerciseViewController.swift */,
+				F3708917261C5E4A0034E509 /* CustomCell.swift */,
+				F370891A261C65930034E509 /* AnswerCell.swift */,
+			);
+			path = "Mini Exercise Controller";
+			sourceTree = "<group>";
+		};
 		F3FE6E23261ADDBF00FA01D0 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +86,6 @@
 				F3FE6E46261ADDFC00FA01D0 /* View */,
 				F3FE6E44261ADDE800FA01D0 /* Model */,
 				F3FE6E2F261ADDC000FA01D0 /* AppDelegate.swift */,
-				F3FE6E35261ADDC000FA01D0 /* Main.storyboard */,
-				F3FE6E33261ADDC000FA01D0 /* ViewController.swift */,
 				F3FE6E31261ADDC000FA01D0 /* SceneDelegate.swift */,
 				F3FE6E38261ADDC000FA01D0 /* Assets.xcassets */,
 				F3FE6E3A261ADDC000FA01D0 /* LaunchScreen.storyboard */,
@@ -80,6 +104,8 @@
 		F3FE6E46261ADDFC00FA01D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F3708911261C56EE0034E509 /* Mini Exercise View */,
+				F3FE6E35261ADDC000FA01D0 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,6 +113,8 @@
 		F3FE6E47261ADE0200FA01D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F3708912261C570B0034E509 /* Mini Exercise Controller */,
+				F3FE6E33261ADDC000FA01D0 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +179,7 @@
 				F3FE6E3C261ADDC000FA01D0 /* LaunchScreen.storyboard in Resources */,
 				F3FE6E39261ADDC000FA01D0 /* Assets.xcassets in Resources */,
 				F3FE6E37261ADDC000FA01D0 /* Main.storyboard in Resources */,
+				F370890F261C56DB0034E509 /* MiniExercise.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3708915261C5B2C0034E509 /* TableMiniExerciseViewController.swift in Sources */,
 				F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */,
+				F370891B261C65930034E509 /* AnswerCell.swift in Sources */,
+				F3708918261C5E4A0034E509 /* CustomCell.swift in Sources */,
 				F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */,
 				F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */,
 			);
