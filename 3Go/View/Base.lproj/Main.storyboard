@@ -52,17 +52,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7E-h9-0O1">
-                                <rect key="frame" x="16" y="96" width="98" height="43"/>
+                                <rect key="frame" x="16" y="96" width="98" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SCc-7i-bkh">
-                                <rect key="frame" x="0.0" y="155" width="390" height="689"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SCc-7i-bkh">
+                                <rect key="frame" x="0.0" y="153" width="390" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="689" id="vtY-vV-rgt"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="questionCell" id="m9C-xL-mD5" customClass="CustomCell" customModule="_Go" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
@@ -130,17 +128,41 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4IR-0x-kt5" id="3q7-q1-vZD"/>
+                                    <outlet property="delegate" destination="4IR-0x-kt5" id="kmp-S3-EXY"/>
+                                </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OQ-D8-fSa">
+                                <rect key="frame" x="45" y="760" width="300" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Next Step">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layout.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Af5-tb-NQw" kind="presentation" identifier="navigateToNextPage" id="bwh-w7-BXz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw1-Gg-YIq">
+                                <rect key="frame" x="16" y="500" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tap here"/>
+                                <connections>
+                                    <action selector="navigateToNextStep:" destination="4IR-0x-kt5" eventType="touchUpInside" id="Sbv-9U-Gpe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="m4y-uG-mcz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="W7E-h9-0O1" firstAttribute="top" secondItem="m4y-uG-mcz" secondAttribute="top" constant="8" id="IxC-LC-VVI"/>
-                            <constraint firstItem="SCc-7i-bkh" firstAttribute="leading" secondItem="m4y-uG-mcz" secondAttribute="leading" id="Oyt-Bl-Mrv"/>
                             <constraint firstItem="W7E-h9-0O1" firstAttribute="leading" secondItem="m4y-uG-mcz" secondAttribute="leading" constant="16" id="R4H-UQ-yAs"/>
-                            <constraint firstItem="SCc-7i-bkh" firstAttribute="top" secondItem="W7E-h9-0O1" secondAttribute="bottom" constant="16" id="ioy-Py-x1m"/>
-                            <constraint firstAttribute="bottom" secondItem="SCc-7i-bkh" secondAttribute="bottom" id="rnR-ns-jrE"/>
-                            <constraint firstItem="SCc-7i-bkh" firstAttribute="trailing" secondItem="m4y-uG-mcz" secondAttribute="trailing" id="rvr-ZW-Zrs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mini Exercise" id="xOg-cB-4Gb">
@@ -148,11 +170,45 @@
                     </navigationItem>
                     <connections>
                         <outlet property="myTableView" destination="SCc-7i-bkh" id="4hf-qe-Ho5"/>
+                        <outlet property="nextStep" destination="5OQ-D8-fSa" id="P3k-jo-LxH"/>
+                        <outlet property="tapHere" destination="kw1-Gg-YIq" id="30a-vG-HS7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tIb-sT-vAY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3518.4615384615386" y="88.862559241706151"/>
+        </scene>
+        <!--Solution-->
+        <scene sceneID="ffe-Ix-4pg">
+            <objects>
+                <viewController title="Solution" id="Af5-tb-NQw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r3d-7L-F4p">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIh-ta-7OM">
+                                <rect key="frame" x="16" y="76" width="327" height="432"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Ubah cos2x menjadi sin  Untuk α = sudut lancip, maka (90° − α) merupakan sudut-sudut kuadran I. 
+Dalam trigonometri, relasi sudut dinyatakan sebagai berikut :
+sin (90° − α) = cos α
+Sehingga pada kuadran satu di mana sudut sisi kurang dari 90°, persamaan cosinus bisa dinyatakan sebagai
+Cos x = sin (90° - x)
+Ubah cos2x menjadi sin, maka jawabannya menjadi:
+Cos x = sin (90° - x)</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2z5-qU-Dl7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vQF-SE-LVE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Hy-Aq-4KL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4572" y="89"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i5m-aR-8ri">
@@ -192,7 +248,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hLf-lo-3kA"/>
+        <segue reference="JZa-Ol-qFj"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Steps" width="23" height="15"/>

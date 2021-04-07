@@ -10,15 +10,17 @@ import UIKit
 class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var myTableView: UITableView!
+    @IBOutlet weak var tapHere: UIButton!
+    @IBOutlet weak var nextStep: UIButton!
     
-    var question = ["Tentukan himpunan penyelesaian dari persamaan: "]
-    var step = ["Ubah cos2x menjadi sin, maka menjadi:"]
-    var answers = ["cos 2x -> sin(0 - 2x)", "cos 2x -> sin(45 - 2x)", "cos 2x -> sin(90 - 2x)"]
+    var questions: [Question] = [Question(question: "Tentukan himpunan penyelesaian dari persamaan: ")]
+    var steps: [Step] = [Step(step: "Ubah cos2x menjadi sin, maka menjadi:")]
+    var answers: [Answer] = Answer.generateData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myTableView.dataSource = self
+        self.tapHere.isHidden = true
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -37,9 +39,9 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return question.count
+            return questions.count
         } else if section == 1 {
-            return step.count
+            return steps.count
         } else {
             return answers.count
         }
@@ -48,27 +50,35 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "questionCell", for: indexPath) as! CustomCell
-            cell.content.text = "\(question[indexPath.row])"
+            cell.content.text = "\(questions[indexPath.row].question)"
             return cell
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "stepCell", for: indexPath) as! CustomCell
-            cell.content.text = "\(step[indexPath.row])"
+            cell.content.text = "\(steps[indexPath.row].step)"
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "answerCell", for: indexPath) as! AnswerCell
-            cell.answerLabel.text = "\(answers[indexPath.row])"
-            cell.radioButton.image = #imageLiteral(resourceName: "Unselected")
-            
-            if cell.isSelected || cell.answerLabel.text == "cos 2x -> sin(0 - 2x)" {
-                cell.radioButton.image = #imageLiteral(resourceName: "Selected")
-            }
-            
+            cell.answer = answers[indexPath.row]
             return cell
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        NSLog("You selected cell number: \(indexPath.row)!")
+        if indexPath.section == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "answerCell", for: indexPath) as! AnswerCell
+            cell.answer = answers[indexPath.row]
+            if cell.answer.content == cell.answer.correctAnswer[0] {
+                self.tapHere.isHidden = true
+                self.nextStep.isEnabled = true
+            } else {
+                self.tapHere.isHidden = false
+                self.nextStep.isEnabled = false
+            }
+        }
+    }
+    
+    @IBAction func navigateToNextStep(_ sender: UIButton) {
+        performSegue(withIdentifier: "navigateToNextPage", sender: self)
     }
     
 }

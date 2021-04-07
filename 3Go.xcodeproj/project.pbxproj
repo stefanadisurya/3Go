@@ -11,6 +11,9 @@
 		F3708915261C5B2C0034E509 /* TableMiniExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3708914261C5B2C0034E509 /* TableMiniExerciseViewController.swift */; };
 		F3708918261C5E4A0034E509 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3708917261C5E4A0034E509 /* CustomCell.swift */; };
 		F370891B261C65930034E509 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370891A261C65930034E509 /* AnswerCell.swift */; };
+		F3803EAF261D583D00B594C4 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3803EAE261D583D00B594C4 /* Answer.swift */; };
+		F3803EB2261D5E6600B594C4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3803EB1261D5E6600B594C4 /* Question.swift */; };
+		F3803EB5261D5FB000B594C4 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3803EB4261D5FB000B594C4 /* Step.swift */; };
 		F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E2F261ADDC000FA01D0 /* AppDelegate.swift */; };
 		F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E31261ADDC000FA01D0 /* SceneDelegate.swift */; };
 		F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E33261ADDC000FA01D0 /* ViewController.swift */; };
@@ -24,6 +27,9 @@
 		F3708914261C5B2C0034E509 /* TableMiniExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMiniExerciseViewController.swift; sourceTree = "<group>"; };
 		F3708917261C5E4A0034E509 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		F370891A261C65930034E509 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		F3803EAE261D583D00B594C4 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		F3803EB1261D5E6600B594C4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		F3803EB4261D5FB000B594C4 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		F3FE6E2C261ADDC000FA01D0 /* 3Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FE6E2F261ADDC000FA01D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3FE6E31261ADDC000FA01D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 		F3FE6E44261ADDE800FA01D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F3803EAE261D583D00B594C4 /* Answer.swift */,
+				F3803EB1261D5E6600B594C4 /* Question.swift */,
+				F3803EB4261D5FB000B594C4 /* Step.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,8 +200,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3708915261C5B2C0034E509 /* TableMiniExerciseViewController.swift in Sources */,
+				F3803EB2261D5E6600B594C4 /* Question.swift in Sources */,
+				F3803EB5261D5FB000B594C4 /* Step.swift in Sources */,
 				F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */,
 				F370891B261C65930034E509 /* AnswerCell.swift in Sources */,
+				F3803EAF261D583D00B594C4 /* Answer.swift in Sources */,
 				F3708918261C5E4A0034E509 /* CustomCell.swift in Sources */,
 				F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */,
 				F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */,
