@@ -59,8 +59,9 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
             cell.answerLabel.text = "\(answers[indexPath.row])"
             cell.radioButton.image = #imageLiteral(resourceName: "Unselected")
             
-            if cell.isSelected || cell.answerLabel.text == "cos 2x -> sin(0 - 2x)" {
+            if cell.isSelected && cell.answerLabel.text == "cos 2x -> sin(0 - 2x)" {
                 cell.radioButton.image = #imageLiteral(resourceName: "Selected")
+                print("Test 1")
             }
             
             return cell
@@ -68,7 +69,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        NSLog("You selected cell number: \(indexPath.row)!")
+        print("You selected cell number: \(indexPath.row)!")
     }
     
 }
