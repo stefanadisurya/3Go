@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		671AC2BB261F3E6000FFD824 /* subMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671AC2BA261F3E6000FFD824 /* subMaterial.swift */; };
-		671AC2C2261F3EBF00FFD824 /* SubMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671AC2C1261F3EBF00FFD824 /* SubMaterialViewController.swift */; };
-		671AC2C6261F3ED600FFD824 /* SubMaterialTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671AC2C4261F3ED600FFD824 /* SubMaterialTable.storyboard */; };
 		671AC2CD261F3FE500FFD824 /* subMaterialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671AC2CB261F3FE500FFD824 /* subMaterialCell.swift */; };
 		671AC2CE261F3FE500FFD824 /* subMaterialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 671AC2CC261F3FE500FFD824 /* subMaterialCell.xib */; };
+		F35BCCA8261F47FD001ACEF7 /* SubMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35BCCA7261F47FD001ACEF7 /* SubMaterialViewController.swift */; };
+		F35BCCAC261F4830001ACEF7 /* subMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35BCCAB261F4830001ACEF7 /* subMaterial.swift */; };
+		F35BCCB0261F4876001ACEF7 /* SubMaterialTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35BCCAF261F4876001ACEF7 /* SubMaterialTable.storyboard */; };
 		F370890F261C56DB0034E509 /* MiniExercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F370890E261C56DB0034E509 /* MiniExercise.storyboard */; };
 		F3708915261C5B2C0034E509 /* TableMiniExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3708914261C5B2C0034E509 /* TableMiniExerciseViewController.swift */; };
 		F370891B261C65930034E509 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370891A261C65930034E509 /* AnswerCell.swift */; };
@@ -29,11 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		671AC2BA261F3E6000FFD824 /* subMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = subMaterial.swift; path = ../../../DemoTechAsyncProject/3GoTest/3GoTest/Models/subMaterial.swift; sourceTree = "<group>"; };
-		671AC2C1261F3EBF00FFD824 /* SubMaterialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubMaterialViewController.swift; path = ../../../../DemoTechAsyncProject/3GoTest/3GoTest/SubMaterialViewController.swift; sourceTree = "<group>"; };
-		671AC2C5261F3ED600FFD824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../DemoTechAsyncProject/3GoTest/3GoTest/Base.lproj/SubMaterialTable.storyboard; sourceTree = "<group>"; };
 		671AC2CB261F3FE500FFD824 /* subMaterialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subMaterialCell.swift; sourceTree = "<group>"; };
 		671AC2CC261F3FE500FFD824 /* subMaterialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = subMaterialCell.xib; sourceTree = "<group>"; };
+		F35BCCA7261F47FD001ACEF7 /* SubMaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMaterialViewController.swift; sourceTree = "<group>"; };
+		F35BCCAB261F4830001ACEF7 /* subMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subMaterial.swift; sourceTree = "<group>"; };
+		F35BCCAF261F4876001ACEF7 /* SubMaterialTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubMaterialTable.storyboard; sourceTree = "<group>"; };
 		F370890E261C56DB0034E509 /* MiniExercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MiniExercise.storyboard; sourceTree = "<group>"; };
 		F3708914261C5B2C0034E509 /* TableMiniExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMiniExerciseViewController.swift; sourceTree = "<group>"; };
 		F370891A261C65930034E509 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
@@ -63,14 +63,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		671AC2C0261F3E9600FFD824 /* Submaterial Controller */ = {
-			isa = PBXGroup;
-			children = (
-				671AC2C1261F3EBF00FFD824 /* SubMaterialViewController.swift */,
-			);
-			path = "Submaterial Controller";
-			sourceTree = "<group>";
-		};
 		671AC2C9261F3F6D00FFD824 /* Submaterial Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +70,14 @@
 				671AC2CC261F3FE500FFD824 /* subMaterialCell.xib */,
 			);
 			path = "Submaterial Cell";
+			sourceTree = "<group>";
+		};
+		F35BCCA6261F47E5001ACEF7 /* Submaterial Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F35BCCA7261F47FD001ACEF7 /* SubMaterialViewController.swift */,
+			);
+			path = "Submaterial Controller";
 			sourceTree = "<group>";
 		};
 		F3708911261C56EE0034E509 /* Mini Exercise View */ = {
@@ -133,10 +133,10 @@
 		F3FE6E44261ADDE800FA01D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				671AC2BA261F3E6000FFD824 /* subMaterial.swift */,
 				F3803EAE261D583D00B594C4 /* Answer.swift */,
 				F3803EB1261D5E6600B594C4 /* Question.swift */,
 				F3803EB4261D5FB000B594C4 /* Step.swift */,
+				F35BCCAB261F4830001ACEF7 /* subMaterial.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,9 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				671AC2C9261F3F6D00FFD824 /* Submaterial Cell */,
-				671AC2C4261F3ED600FFD824 /* SubMaterialTable.storyboard */,
 				F3708911261C56EE0034E509 /* Mini Exercise View */,
 				F3FE6E35261ADDC000FA01D0 /* Main.storyboard */,
+				F35BCCAF261F4876001ACEF7 /* SubMaterialTable.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 		F3FE6E47261ADE0200FA01D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				671AC2C0261F3E9600FFD824 /* Submaterial Controller */,
+				F35BCCA6261F47E5001ACEF7 /* Submaterial Controller */,
 				F3708912261C570B0034E509 /* Mini Exercise Controller */,
 				F3FE6E33261ADDC000FA01D0 /* ViewController.swift */,
 			);
@@ -223,8 +223,8 @@
 				F3FE6E39261ADDC000FA01D0 /* Assets.xcassets in Resources */,
 				F3FE6E37261ADDC000FA01D0 /* Main.storyboard in Resources */,
 				F370890F261C56DB0034E509 /* MiniExercise.storyboard in Resources */,
-				671AC2C6261F3ED600FFD824 /* SubMaterialTable.storyboard in Resources */,
 				671AC2CE261F3FE500FFD824 /* subMaterialCell.xib in Resources */,
+				F35BCCB0261F4876001ACEF7 /* SubMaterialTable.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,16 +237,16 @@
 			files = (
 				F3708915261C5B2C0034E509 /* TableMiniExerciseViewController.swift in Sources */,
 				F3803EB2261D5E6600B594C4 /* Question.swift in Sources */,
-				671AC2C2261F3EBF00FFD824 /* SubMaterialViewController.swift in Sources */,
-				671AC2BB261F3E6000FFD824 /* subMaterial.swift in Sources */,
 				F3803EB5261D5FB000B594C4 /* Step.swift in Sources */,
 				F3FE03DF261ED6E3002E35D6 /* StepTableViewController.swift in Sources */,
 				F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */,
+				F35BCCA8261F47FD001ACEF7 /* SubMaterialViewController.swift in Sources */,
 				F3FE03DC261EBCDD002E35D6 /* CustomCell.swift in Sources */,
 				671AC2CD261F3FE500FFD824 /* subMaterialCell.swift in Sources */,
 				F370891B261C65930034E509 /* AnswerCell.swift in Sources */,
 				F3803EAF261D583D00B594C4 /* Answer.swift in Sources */,
 				F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */,
+				F35BCCAC261F4830001ACEF7 /* subMaterial.swift in Sources */,
 				F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +254,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		671AC2C4261F3ED600FFD824 /* SubMaterialTable.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				671AC2C5261F3ED600FFD824 /* Base */,
-			);
-			name = SubMaterialTable.storyboard;
-			sourceTree = "<group>";
-		};
 		F3FE6E35261ADDC000FA01D0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
