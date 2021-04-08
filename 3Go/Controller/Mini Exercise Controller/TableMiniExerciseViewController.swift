@@ -9,18 +9,25 @@ import UIKit
 
 class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var stepLabel: UILabel!
     @IBOutlet weak var myTableView: UITableView!
     @IBOutlet weak var tapHere: UIButton!
+    @IBOutlet weak var wrongLabel: UILabel!
     @IBOutlet weak var nextStep: UIButton!
     
     var questions: [Question] = [Question(question: "Tentukan himpunan penyelesaian dari persamaan: ")]
-    var steps: [Step] = [Step(step: "Ubah cos2x menjadi sin, maka menjadi:")]
+    var steps: [String] = ["Ubah cos2x menjadi sin, maka menjadi:"]
     var answers: [Answer] = Answer.generateData()
+    var correctAnswer: [String] = ["cos 2x -> sin(90 - 2x)"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.stepLabel.text = "\(Step(step: "Step 1").step)"
         self.tapHere.isHidden = true
+        self.wrongLabel.isHidden = true
+        self.nextStep.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        self.nextStep.layer.cornerRadius = 15
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -31,7 +38,13 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
         if section == 0 {
             return "QUESTION"
         } else if section == 1 {
-            return "STEP 1"
+            if stepLabel.text == "Step 1" {
+                return "STEP 1"
+            } else if stepLabel.text == "Step 2" {
+                return "STEP 2"
+            } else {
+                return "STEP 3"
+            }
         } else {
             return "ANSWER"
         }
@@ -54,7 +67,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
             return cell
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "stepCell", for: indexPath) as! CustomCell
-            cell.content.text = "\(steps[indexPath.row].step)"
+            cell.content.text = "\(steps[0])"
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "answerCell", for: indexPath) as! AnswerCell
@@ -67,18 +80,49 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
         if indexPath.section == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "answerCell", for: indexPath) as! AnswerCell
             cell.answer = answers[indexPath.row]
-            if cell.answer.content == cell.answer.correctAnswer[0] {
+            if cell.answer.content == self.correctAnswer[0] {
+                self.wrongLabel.isHidden = true
                 self.tapHere.isHidden = true
                 self.nextStep.isEnabled = true
+                self.nextStep.backgroundColor = UIColor(red: 105/255, green: 48/255, blue: 195/255, alpha: 1)
             } else {
+                self.wrongLabel.isHidden = false
                 self.tapHere.isHidden = false
                 self.nextStep.isEnabled = false
+                self.nextStep.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
             }
         }
     }
     
+    func loadNewComponent(isEnabled: Bool, bgColor: UIColor, label: String) {
+        self.nextStep.isEnabled = isEnabled
+        self.nextStep.backgroundColor = bgColor
+        self.stepLabel.text = label
+    }
+    
+    func loadNewData(from generateData: [Answer], correct: String, step: String) {
+        self.answers = generateData
+        self.correctAnswer.removeAll()
+        self.correctAnswer.append(correct)
+        steps.removeAll()
+        steps.append(step)
+    }
+    
+    @IBAction func navigateToSolution(_ sender: UIButton) {
+        performSegue(withIdentifier: "navigateToSolution", sender: self)
+    }
+    
     @IBAction func navigateToNextStep(_ sender: UIButton) {
-        performSegue(withIdentifier: "navigateToNextPage", sender: self)
+        if self.stepLabel.text == "Step 1" {
+            loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1), label: "\(Step(step: "Step 2").step)")
+            loadNewData(from: Answer.generateData2(), correct: "x1 = 24 + (k.72), x2 = 45 + (k.360)", step: "Setelah mengubah cos, cari nilai x1 dan x2. Maka nilainya adalah:")
+            myTableView.reloadData()
+            print(correctAnswer)
+        } else if self.stepLabel.text == "Step 2" {
+            loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), label: "\(Step(step: "Step 3").step)")
+            loadNewData(from: Answer.generateData3(), correct: "(18, 90, 162, 234)", step: "Nilai x1 dan x2 sudah ditemukan. Cari nilai k0, k1, k2, k3 untuk menentukan himpunan. Maka himpunannya menjadi:")
+            myTableView.reloadData()
+        }
     }
     
 }

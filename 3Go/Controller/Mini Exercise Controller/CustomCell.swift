@@ -2,7 +2,7 @@
 //  CustomCell.swift
 //  3Go
 //
-//  Created by Stefan Adisurya on 06/04/21.
+//  Created by Stefan Adisurya on 08/04/21.
 //
 
 import UIKit
