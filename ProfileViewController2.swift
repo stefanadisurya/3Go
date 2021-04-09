@@ -1,18 +1,15 @@
 //
-//  ProfileViewController.swift
+//  ProfileViewController2.swift
 //  3Go
 //
-//  Created by Fiona Stefani Limin on 06/04/21.
+//  Created by Fiona Stefani Limin on 09/04/21.
 //
-
-//ptofile controller fiona
 
 import UIKit
 
-class ProfileViewController: UIViewController{
+class ProfileViewController2: UIViewController {
 
     @IBOutlet weak var ProfileTableView: UITableView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Profile"
@@ -20,29 +17,19 @@ class ProfileViewController: UIViewController{
         ProfileTableView.delegate = self
         ProfileTableView.dataSource = self
         
-        let header = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 89))
+
         let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 300))
         //footer.backgroundColor = .orange
-        header.backgroundColor = .green
-        
-        ProfileTableView.tableHeaderView = header
+       
         ProfileTableView.tableFooterView = footer
-        
-        let label = UILabel()
-        label.frame = CGRect.init(x: 20, y: 5, width: 100, height: 35)
-        label.text = "Guest"
-        label.font = .systemFont(ofSize: 16)
-        label.textColor = .yellow
-    
-        header.addSubview(label)
 
-        
+
+       
         
         // Do any additional setup after loading the view.
     }
     
 
-    
 
     /*
     // MARK: - Navigation
@@ -55,17 +42,16 @@ class ProfileViewController: UIViewController{
     */
 
 }
-
-extension ProfileViewController: UITableViewDelegate{
+extension ProfileViewController2: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
 
-extension ProfileViewController: UITableViewDataSource {
+extension ProfileViewController2: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 20
+        return 0
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -80,6 +66,9 @@ extension ProfileViewController: UITableViewDataSource {
         cell.textLabel?.text = "Summary"
         cell.imageView?.image = UIImage( systemName:"star.square.fill")
         cell.imageView?.tintColor = .systemYellow
+        cell.accessoryType = .disclosureIndicator
+        
+        
        
         return cell
     }
