@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xvG-lp-URO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ExerciseListDetail-->
+        <scene sceneID="3g9-2a-EPE">
+            <objects>
+                <viewController title="ExerciseListDetail" id="gJF-Cp-egW" customClass="ExerciseListDetailViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nkd-PM-7XF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="qaH-WC-Dpu">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fIG-WW-816"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fIG-WW-816" firstAttribute="trailing" secondItem="qaH-WC-Dpu" secondAttribute="trailing" id="Q1p-Ky-WYE"/>
+                            <constraint firstItem="qaH-WC-Dpu" firstAttribute="top" secondItem="fIG-WW-816" secondAttribute="top" id="Y8l-kT-e46"/>
+                            <constraint firstItem="fIG-WW-816" firstAttribute="bottom" secondItem="qaH-WC-Dpu" secondAttribute="bottom" id="arr-xw-qlG"/>
+                            <constraint firstItem="qaH-WC-Dpu" firstAttribute="leading" secondItem="fIG-WW-816" secondAttribute="leading" id="bWq-cp-OTn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RgO-Iy-l3g">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Nt7-20-Jvj">
+                            <rect key="frame" x="104" y="5.5" width="206" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Easy"/>
+                                <segment title="Medium"/>
+                                <segment title="Hard"/>
+                            </segments>
+                            <connections>
+                                <action selector="diffcultyDidChange:" destination="gJF-Cp-egW" eventType="valueChanged" id="puG-De-A9w"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="exerciseDetailTable" destination="qaH-WC-Dpu" id="ySb-fb-uPf"/>
+                        <segue destination="TwI-GU-z2m" kind="show" identifier="startExercise" id="DUp-L8-6Xy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ia9-xE-Dd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997.10144927536237" y="32.8125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vxo-mu-YEP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3S-p8-DJD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xvG-lp-URO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="mrf-2R-Xjo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gJF-Cp-egW" kind="relationship" relationship="rootViewController" id="4nO-Xl-KU2"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="32.8125"/>
+        </scene>
+        <!--Exercise-->
+        <scene sceneID="sBb-OP-Sg2">
+            <objects>
+                <viewController title="Exercise" id="TwI-GU-z2m" customClass="ExerciseController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fXs-mF-Ibd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJL-Va-2V0">
+                                <rect key="frame" x="20" y="10" width="58" height="28"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="00:00">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MZ5-lE-iLe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bJL-Va-2V0" firstAttribute="top" secondItem="fXs-mF-Ibd" secondAttribute="top" constant="10" id="JqP-dP-wIT"/>
+                            <constraint firstAttribute="trailing" secondItem="bJL-Va-2V0" secondAttribute="trailing" constant="336" id="KFA-8m-OhK"/>
+                            <constraint firstItem="bJL-Va-2V0" firstAttribute="leading" secondItem="fXs-mF-Ibd" secondAttribute="leading" constant="20" symbolic="YES" id="qre-jT-Gyt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3v2-rM-ZV7"/>
+                    <connections>
+                        <outlet property="timerLbl" destination="bJL-Va-2V0" id="NGj-Ue-at8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VR8-MH-ZiP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2009" y="33"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

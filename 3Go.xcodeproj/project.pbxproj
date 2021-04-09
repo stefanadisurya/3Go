@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4908600B261F63BA0047DF54 /* SubMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49086009261F63BA0047DF54 /* SubMaterialViewController.swift */; };
+		49086016261F64190047DF54 /* subMaterialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49086014261F64190047DF54 /* subMaterialCell.xib */; };
+		49086017261F64190047DF54 /* subMaterialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49086015261F64190047DF54 /* subMaterialCell.swift */; };
+		4908601A261F64280047DF54 /* SubMaterialTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49086019261F64280047DF54 /* SubMaterialTable.storyboard */; };
+		4908601D261F64410047DF54 /* subMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908601C261F64410047DF54 /* subMaterial.swift */; };
+		49086022261F65AC0047DF54 /* ExerciseListDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49086020261F65AC0047DF54 /* ExerciseListDetailCell.swift */; };
+		49086023261F65AC0047DF54 /* ExerciseListDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49086021261F65AC0047DF54 /* ExerciseListDetailCell.xib */; };
+		49086026261F67D90047DF54 /* ExerciseListDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49086025261F67D90047DF54 /* ExerciseListDetail.swift */; };
 		490B8C11261E058500FA1066 /* ExerciseListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B8C0F261E058500FA1066 /* ExerciseListCell.swift */; };
 		490B8C12261E058500FA1066 /* ExerciseListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 490B8C10261E058500FA1066 /* ExerciseListCell.xib */; };
 		490B8C15261E121900FA1066 /* ExerciseListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490B8C14261E121900FA1066 /* ExerciseListView.storyboard */; };
 		490B8C18261E127900FA1066 /* ExerciseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B8C17261E127900FA1066 /* ExerciseListController.swift */; };
 		4927B097261EA23200642A53 /* TESTING.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4927B096261EA23200642A53 /* TESTING.storyboard */; };
+		4927B09A261EF35E00642A53 /* ExerciseListDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4927B099261EF35E00642A53 /* ExerciseListDetail.storyboard */; };
+		4927B09D261EF39800642A53 /* ExerciseListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927B09C261EF39800642A53 /* ExerciseListDetailViewController.swift */; };
 		49D31576261DA8FA00A2257D /* ExerciseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D31575261DA8F500A2257D /* ExerciseController.swift */; };
 		49D3157A261DAA7000A2257D /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D31579261DAA7000A2257D /* Exercise.storyboard */; };
 		49D31580261E02EC00A2257D /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3157E261E02EB00A2257D /* ExerciseListViewController.swift */; };
 		49D31581261E02EC00A2257D /* ExerciseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D3157F261E02EC00A2257D /* ExerciseListViewController.xib */; };
+		49F205B02620410100641018 /* exerciseFinish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F205AE2620410100641018 /* exerciseFinish.storyboard */; };
+		49F205B12620410100641018 /* exerciseFinishViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F205AF2620410100641018 /* exerciseFinishViewControler.swift */; };
+		49F205B7262045B000641018 /* ExerciseAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F205B3262045B000641018 /* ExerciseAnswer.swift */; };
+		49F205B8262045B000641018 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F205B4262045B000641018 /* CustomCell.swift */; };
+		49F205B9262045B000641018 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F205B5262045B000641018 /* AnswerCell.swift */; };
+		49F205BA262045B000641018 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F205B6262045B000641018 /* Question.swift */; };
 		F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E2F261ADDC000FA01D0 /* AppDelegate.swift */; };
 		F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E31261ADDC000FA01D0 /* SceneDelegate.swift */; };
 		F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E33261ADDC000FA01D0 /* ViewController.swift */; };
@@ -25,15 +41,31 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49086009261F63BA0047DF54 /* SubMaterialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMaterialViewController.swift; sourceTree = "<group>"; };
+		49086014261F64190047DF54 /* subMaterialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = subMaterialCell.xib; sourceTree = "<group>"; };
+		49086015261F64190047DF54 /* subMaterialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subMaterialCell.swift; sourceTree = "<group>"; };
+		49086019261F64280047DF54 /* SubMaterialTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SubMaterialTable.storyboard; sourceTree = "<group>"; };
+		4908601C261F64410047DF54 /* subMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subMaterial.swift; sourceTree = "<group>"; };
+		49086020261F65AC0047DF54 /* ExerciseListDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListDetailCell.swift; sourceTree = "<group>"; };
+		49086021261F65AC0047DF54 /* ExerciseListDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseListDetailCell.xib; sourceTree = "<group>"; };
+		49086025261F67D90047DF54 /* ExerciseListDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListDetail.swift; sourceTree = "<group>"; };
 		490B8C0F261E058500FA1066 /* ExerciseListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListCell.swift; sourceTree = "<group>"; };
 		490B8C10261E058500FA1066 /* ExerciseListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseListCell.xib; sourceTree = "<group>"; };
 		490B8C14261E121900FA1066 /* ExerciseListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ExerciseListView.storyboard; path = 3Go/Controller/ExerciseListCell/ExerciseListView.storyboard; sourceTree = SOURCE_ROOT; };
 		490B8C17261E127900FA1066 /* ExerciseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExerciseListController.swift; path = 3Go/Controller/ExerciseListCell/ExerciseListController.swift; sourceTree = SOURCE_ROOT; };
 		4927B096261EA23200642A53 /* TESTING.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TESTING.storyboard; path = 3Go/Controller/ExerciseListCell/TESTING.storyboard; sourceTree = SOURCE_ROOT; };
+		4927B099261EF35E00642A53 /* ExerciseListDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExerciseListDetail.storyboard; sourceTree = "<group>"; };
+		4927B09C261EF39800642A53 /* ExerciseListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListDetailViewController.swift; sourceTree = "<group>"; };
 		49D31575261DA8F500A2257D /* ExerciseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseController.swift; sourceTree = "<group>"; };
 		49D31579261DAA7000A2257D /* Exercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
 		49D3157E261E02EB00A2257D /* ExerciseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
 		49D3157F261E02EC00A2257D /* ExerciseListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseListViewController.xib; sourceTree = "<group>"; };
+		49F205AE2620410100641018 /* exerciseFinish.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = exerciseFinish.storyboard; sourceTree = "<group>"; };
+		49F205AF2620410100641018 /* exerciseFinishViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exerciseFinishViewControler.swift; sourceTree = "<group>"; };
+		49F205B3262045B000641018 /* ExerciseAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseAnswer.swift; sourceTree = "<group>"; };
+		49F205B4262045B000641018 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		49F205B5262045B000641018 /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		49F205B6262045B000641018 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F3FE6E2C261ADDC000FA01D0 /* 3Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FE6E2F261ADDC000FA01D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3FE6E31261ADDC000FA01D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +87,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49086008261F63BA0047DF54 /* Submaterial Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49086009261F63BA0047DF54 /* SubMaterialViewController.swift */,
+			);
+			path = "Submaterial Controller";
+			sourceTree = "<group>";
+		};
+		49086013261F64190047DF54 /* Submaterial Cell */ = {
+			isa = PBXGroup;
+			children = (
+				49086014261F64190047DF54 /* subMaterialCell.xib */,
+				49086015261F64190047DF54 /* subMaterialCell.swift */,
+			);
+			path = "Submaterial Cell";
+			sourceTree = "<group>";
+		};
+		4908601F261F654D0047DF54 /* Exercise Submaterial Cell */ = {
+			isa = PBXGroup;
+			children = (
+				49086020261F65AC0047DF54 /* ExerciseListDetailCell.swift */,
+				49086021261F65AC0047DF54 /* ExerciseListDetailCell.xib */,
+			);
+			path = "Exercise Submaterial Cell";
+			sourceTree = "<group>";
+		};
 		490B8C0E261E052900FA1066 /* ExerciseListCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +120,15 @@
 				490B8C10261E058500FA1066 /* ExerciseListCell.xib */,
 			);
 			path = ExerciseListCell;
+			sourceTree = "<group>";
+		};
+		49F205AD262040EB00641018 /* Exercise Completion */ = {
+			isa = PBXGroup;
+			children = (
+				49F205AE2620410100641018 /* exerciseFinish.storyboard */,
+				49F205AF2620410100641018 /* exerciseFinishViewControler.swift */,
+			);
+			path = "Exercise Completion";
 			sourceTree = "<group>";
 		};
 		F3FE6E23261ADDBF00FA01D0 = {
@@ -100,6 +167,12 @@
 		F3FE6E44261ADDE800FA01D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				49F205B3262045B000641018 /* ExerciseAnswer.swift */,
+				49F205B5262045B000641018 /* AnswerCell.swift */,
+				49F205B4262045B000641018 /* CustomCell.swift */,
+				49F205B6262045B000641018 /* Question.swift */,
+				4908601C261F64410047DF54 /* subMaterial.swift */,
+				49086025261F67D90047DF54 /* ExerciseListDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,9 +180,13 @@
 		F3FE6E46261ADDFC00FA01D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				49F205AD262040EB00641018 /* Exercise Completion */,
+				4908601F261F654D0047DF54 /* Exercise Submaterial Cell */,
+				49086013261F64190047DF54 /* Submaterial Cell */,
 				490B8C14261E121900FA1066 /* ExerciseListView.storyboard */,
 				490B8C17261E127900FA1066 /* ExerciseListController.swift */,
 				4927B096261EA23200642A53 /* TESTING.storyboard */,
+				49086019261F64280047DF54 /* SubMaterialTable.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,11 +194,14 @@
 		F3FE6E47261ADE0200FA01D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				49086008261F63BA0047DF54 /* Submaterial Controller */,
 				490B8C0E261E052900FA1066 /* ExerciseListCell */,
 				49D31575261DA8F500A2257D /* ExerciseController.swift */,
 				49D31579261DAA7000A2257D /* Exercise.storyboard */,
 				49D3157E261E02EB00A2257D /* ExerciseListViewController.swift */,
 				49D3157F261E02EC00A2257D /* ExerciseListViewController.xib */,
+				4927B099261EF35E00642A53 /* ExerciseListDetail.storyboard */,
+				4927B09C261EF39800642A53 /* ExerciseListDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,13 +263,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4908601A261F64280047DF54 /* SubMaterialTable.storyboard in Resources */,
 				F3FE6E3C261ADDC000FA01D0 /* LaunchScreen.storyboard in Resources */,
+				4927B09A261EF35E00642A53 /* ExerciseListDetail.storyboard in Resources */,
 				490B8C12261E058500FA1066 /* ExerciseListCell.xib in Resources */,
 				F3FE6E39261ADDC000FA01D0 /* Assets.xcassets in Resources */,
 				49D3157A261DAA7000A2257D /* Exercise.storyboard in Resources */,
+				49086023261F65AC0047DF54 /* ExerciseListDetailCell.xib in Resources */,
+				49086016261F64190047DF54 /* subMaterialCell.xib in Resources */,
 				490B8C15261E121900FA1066 /* ExerciseListView.storyboard in Resources */,
 				49D31581261E02EC00A2257D /* ExerciseListViewController.xib in Resources */,
 				F3FE6E37261ADDC000FA01D0 /* Main.storyboard in Resources */,
+				49F205B02620410100641018 /* exerciseFinish.storyboard in Resources */,
 				4927B097261EA23200642A53 /* TESTING.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,13 +286,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F205B9262045B000641018 /* AnswerCell.swift in Sources */,
+				49086026261F67D90047DF54 /* ExerciseListDetail.swift in Sources */,
 				49D31580261E02EC00A2257D /* ExerciseListViewController.swift in Sources */,
+				49F205BA262045B000641018 /* Question.swift in Sources */,
 				490B8C11261E058500FA1066 /* ExerciseListCell.swift in Sources */,
+				4908601D261F64410047DF54 /* subMaterial.swift in Sources */,
+				49F205B12620410100641018 /* exerciseFinishViewControler.swift in Sources */,
 				490B8C18261E127900FA1066 /* ExerciseListController.swift in Sources */,
+				49F205B8262045B000641018 /* CustomCell.swift in Sources */,
 				F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */,
 				F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */,
+				49086022261F65AC0047DF54 /* ExerciseListDetailCell.swift in Sources */,
+				4908600B261F63BA0047DF54 /* SubMaterialViewController.swift in Sources */,
 				49D31576261DA8FA00A2257D /* ExerciseController.swift in Sources */,
 				F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */,
+				49F205B7262045B000641018 /* ExerciseAnswer.swift in Sources */,
+				4927B09D261EF39800642A53 /* ExerciseListDetailViewController.swift in Sources */,
+				49086017261F64190047DF54 /* subMaterialCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
