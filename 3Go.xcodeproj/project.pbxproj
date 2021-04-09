@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		087CDE20261EE48D00BC2726 /* MaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CDE1F261EE48D00BC2726 /* MaterialViewController.swift */; };
+		087CDE24261EE5D000BC2726 /* Material.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 087CDE23261EE5D000BC2726 /* Material.storyboard */; };
 		F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E2F261ADDC000FA01D0 /* AppDelegate.swift */; };
 		F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E31261ADDC000FA01D0 /* SceneDelegate.swift */; };
 		F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E33261ADDC000FA01D0 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		087CDE1F261EE48D00BC2726 /* MaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialViewController.swift; sourceTree = "<group>"; };
+		087CDE23261EE5D000BC2726 /* Material.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Material.storyboard; path = 3Go/Material.storyboard; sourceTree = SOURCE_ROOT; };
 		F3FE6E2C261ADDC000FA01D0 /* 3Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FE6E2F261ADDC000FA01D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3FE6E31261ADDC000FA01D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		F3FE6E46261ADDFC00FA01D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				087CDE23261EE5D000BC2726 /* Material.storyboard */,
+				087CDE1F261EE48D00BC2726 /* MaterialViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3FE6E3C261ADDC000FA01D0 /* LaunchScreen.storyboard in Resources */,
+				087CDE24261EE5D000BC2726 /* Material.storyboard in Resources */,
 				F3FE6E39261ADDC000FA01D0 /* Assets.xcassets in Resources */,
 				F3FE6E37261ADDC000FA01D0 /* Main.storyboard in Resources */,
 			);
@@ -162,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */,
+				087CDE20261EE48D00BC2726 /* MaterialViewController.swift in Sources */,
 				F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */,
 				F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */,
 			);
