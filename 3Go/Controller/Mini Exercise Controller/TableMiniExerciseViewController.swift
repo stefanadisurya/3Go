@@ -15,7 +15,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
     @IBOutlet weak var wrongLabel: UILabel!
     @IBOutlet weak var nextStep: UIButton!
     
-    var questions: [Question] = [Question(question: "Tentukan himpunan penyelesaian dari persamaan: ")]
+    var questions: [Question] = [Question(question: "Tentukan himpunan penyelesaian dari persamaan:\nsin 3x = cos 2x; 0 <= x <= 360")]
     var steps: [String] = ["Ubah cos2x menjadi sin, maka menjadi:"]
     var answers: [Answer] = Answer.generateData()
     var correctAnswer: [String] = ["cos 2x -> sin(90 - 2x)"]
@@ -108,8 +108,22 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
         steps.append(step)
     }
     
-    @IBAction func navigateToSolution(_ sender: UIButton) {
-        performSegue(withIdentifier: "navigateToSolution", sender: self)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "navigateToSolution" {
+            if self.stepLabel.text == "Step 1" {
+                let destination = segue.destination as? SolutionViewController
+                destination?.navbarTitle = "Solution"
+                destination?.solution = "Ubah cos2x menjadi sin\n\nUntuk α = sudut lancip, maka (90° − α) merupakan sudut-sudut kuadran I. Dalam trigonometri, relasi sudut dinyatakan sebagai berikut :\nsin (90° − α) = cos α\n\nSehingga pada kuadran satu di mana sudut sisi kurang dari 90°, persamaan cosinus bisa dinyatakan sebagai\nCos x = sin (90° - x)\n\nUbah cos2x menjadi sin, maka jawabannya menjadi:\nCos x = sin (90° - x)"
+            } else if self.stepLabel.text == "Step 2" {
+                let destination = segue.destination as? SolutionViewController
+                destination?.navbarTitle = "Solution"
+                destination?.solution = "2"
+            } else if self.stepLabel.text == "Step 3" {
+                let destination = segue.destination as? SolutionViewController
+                destination?.navbarTitle = "Solution"
+                destination?.solution = "3"
+            }
+        }
     }
     
     @IBAction func navigateToNextStep(_ sender: UIButton) {
@@ -117,7 +131,6 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
             loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1), label: "\(Step(step: "Step 2").step)")
             loadNewData(from: Answer.generateData2(), correct: "x1 = 24 + (k.72), x2 = 45 + (k.360)", step: "Setelah mengubah cos, cari nilai x1 dan x2. Maka nilainya adalah:")
             myTableView.reloadData()
-            print(correctAnswer)
         } else if self.stepLabel.text == "Step 2" {
             loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), label: "\(Step(step: "Step 3").step)")
             loadNewData(from: Answer.generateData3(), correct: "(18, 90, 162, 234)", step: "Nilai x1 dan x2 sudah ditemukan. Cari nilai k0, k1, k2, k3 untuk menentukan himpunan. Maka himpunannya menjadi:")

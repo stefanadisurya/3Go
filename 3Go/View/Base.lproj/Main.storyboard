@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MBy-1s-E3C">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -110,17 +110,17 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="answerCell" id="GyK-PR-Ksp" customClass="AnswerCell" customModule="_Go" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="114.33333587646484" width="390" height="43"/>
+                                        <rect key="frame" x="0.0" y="114.33333587646484" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GyK-PR-Ksp" id="1Ox-lT-Haa">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aO1-1Q-ypV">
-                                                    <rect key="frame" x="20" y="11" width="20" height="21"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="20" height="21.666666666666671"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB8-t2-bh3">
-                                                    <rect key="frame" x="52" y="11" width="318" height="21"/>
+                                                    <rect key="frame" x="52" y="11.000000000000002" width="318" height="21.666666666666671"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="318" id="O0W-T9-wiK"/>
                                                     </constraints>
@@ -169,7 +169,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Tap here"/>
                                 <connections>
-                                    <action selector="navigateToSolution:" destination="4IR-0x-kt5" eventType="touchUpInside" id="t5x-1G-yTS"/>
                                     <segue destination="Af5-tb-NQw" kind="presentation" identifier="navigateToSolution" id="PY9-h4-akg"/>
                                 </connections>
                             </button>
@@ -201,7 +200,7 @@
                     <navigationItem key="navigationItem" title="Mini Exercise" id="xOg-cB-4Gb">
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="2E3-B2-FLU">
                             <connections>
-                                <segue destination="GA6-X9-ayC" kind="show" id="XPf-hb-yJp"/>
+                                <segue destination="GA6-X9-ayC" kind="show" identifier="navigateToStepList" id="XPf-hb-yJp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -274,16 +273,13 @@
         <!--Solution-->
         <scene sceneID="ffe-Ix-4pg">
             <objects>
-                <viewController title="Solution" id="Af5-tb-NQw" sceneMemberID="viewController">
+                <viewController title="Solution" id="Af5-tb-NQw" customClass="SolutionViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r3d-7L-F4p">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIh-ta-7OM" userLabel="Solution Label">
-                                <rect key="frame" x="16" y="72.000000000000014" width="327" height="223.33333333333337"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="223.33333333333337" id="TgS-iQ-rA8"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="72" width="327" height="324.66666666666669"/>
                                 <string key="text">Ubah cos2x menjadi sin   Untuk α = sudut lancip, maka (90° − α) merupakan sudut-sudut kuadran I. 
 Dalam trigonometri, relasi sudut dinyatakan sebagai berikut :
 sin (90° − α) = cos α
@@ -314,6 +310,10 @@ Cos x = sin (90° - x)</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vQF-SE-LVE"/>
+                    <connections>
+                        <outlet property="navbarItem" destination="TNZ-Sq-FUy" id="nEn-Wx-5Xz"/>
+                        <outlet property="solutionLabel" destination="hIh-ta-7OM" id="UuS-Dv-Qf5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Hy-Aq-4KL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
