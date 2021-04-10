@@ -23,10 +23,9 @@ class exerciseFinishViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
-        
-        timerLabel.text = timer
-        
+    }
+    
+    private func setUpComponent(){
         if (isCorrect){
             oopsLabel.text = "Woho!"
             incorrectLabel.text = "Your answer is correct"
@@ -39,6 +38,15 @@ class exerciseFinishViewController: UIViewController {
         excerciseButton.layer.cornerRadius = 15
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        navigationItem.hidesBackButton = true
+        title = ""
+        timerLabel.text = timer
+        
     }
+
+}
 

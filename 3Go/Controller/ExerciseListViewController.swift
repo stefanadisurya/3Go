@@ -32,7 +32,6 @@ class ExerciseListViewController: UIViewController, UICollectionViewDelegate, UI
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exerciseCellIdentifier", for: indexPath) as? ExerciseListCell
         cell?.title = materialExercise[indexPath.item]
         cell?.image = "ExerciseIconWhite" + String(indexPath.item + 1)
-//        cell?.image = "BoardClipExercise"
         return cell!
     }
 }
