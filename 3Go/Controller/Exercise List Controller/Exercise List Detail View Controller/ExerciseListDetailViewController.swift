@@ -9,15 +9,14 @@ import UIKit
 
 class ExerciseListDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var exerciseDetailTable: UITableView!
+    
     var exerciseList = [ExerciseListDetail]()
     var miniExercise = ExerciseListDetail(numLabel: "0", exerciseListTitle: "Mini Exercise")
     
     var titleLabel: String = ""
-    
-    @IBOutlet weak var exerciseDetailTable: UITableView!
 
     var currentSegmentIndex = 0
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +26,7 @@ class ExerciseListDetailViewController: UIViewController, UITableViewDelegate, U
         generateExercise()
     }
         
-    override var prefersStatusBarHidden: Bool {
-        true
-    }
+    override var prefersStatusBarHidden: Bool { true }
     
     @IBAction func diffcultyDidChange(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
@@ -53,8 +50,7 @@ class ExerciseListDetailViewController: UIViewController, UITableViewDelegate, U
         return exerciseList.count
     }
     
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func showAlert(indexPath: IndexPath) {
         let alert = UIAlertController(title: "Do you want to start?", message: "You can't go back once you have started the exercise", preferredStyle: .alert)
         
         let cancelButton = UIAlertAction(title: "Start", style: .default){
@@ -72,6 +68,14 @@ class ExerciseListDetailViewController: UIViewController, UITableViewDelegate, U
         
         alert.addAction(startButton)
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            performSegue(withIdentifier: "navigateToMiniExercise", sender: nil)
+        } else {
+            showAlert(indexPath: indexPath)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

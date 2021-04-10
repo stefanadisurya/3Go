@@ -6,15 +6,6 @@
 //
 
 import UIKit
-import BackgroundTasks
-
-/*
- 
- 
- 
- 
- */
-
 
 class ExerciseController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
@@ -52,7 +43,7 @@ class ExerciseController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
-            return UIStatusBarAnimation.slide
+        return UIStatusBarAnimation.slide
     }
     
     @IBAction func submitExercise(_ sender: UIButton) {
@@ -104,9 +95,9 @@ class ExerciseController: UIViewController, UITableViewDelegate, UITableViewData
             let cell = tableView.dequeueReusableCell(withIdentifier: "answerCell", for: indexPath) as! AnswerCell
             cell.answer = answers[indexPath.row]
             if cell.answer.content == self.correctAnswer[0] {
-               isCorrect = true
+                isCorrect = true
             } else {
-               isCorrect = false
+                isCorrect = false
             }
         }
     }

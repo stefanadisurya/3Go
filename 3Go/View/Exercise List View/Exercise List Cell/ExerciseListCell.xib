@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highlight Title" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61Q-uL-yW2">
-                        <rect key="frame" x="0.0" y="169" width="184" height="20.5"/>
+                        <rect key="frame" x="10" y="169" width="174" height="20.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -59,7 +59,6 @@
             <viewLayoutGuide key="safeArea" id="qOq-QL-NVO"/>
             <constraints>
                 <constraint firstItem="9Kr-Rh-5hC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2J7-Sy-sNQ"/>
-                <constraint firstItem="61Q-uL-yW2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BQm-B7-bC5"/>
                 <constraint firstAttribute="trailing" secondItem="9Kr-Rh-5hC" secondAttribute="trailing" id="CmV-3k-alu"/>
                 <constraint firstAttribute="trailing" secondItem="61Q-uL-yW2" secondAttribute="trailing" id="Drw-3n-wL7"/>
                 <constraint firstItem="awb-pA-PnR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T5Y-o6-TvU"/>
@@ -71,6 +70,7 @@
                 <constraint firstItem="awb-pA-PnR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hfj-t8-dg4"/>
                 <constraint firstItem="rBD-vm-aq2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="idD-yq-svk"/>
                 <constraint firstItem="61Q-uL-yW2" firstAttribute="top" secondItem="rBD-vm-aq2" secondAttribute="bottom" constant="40" id="jrA-SG-8fV"/>
+                <constraint firstItem="61Q-uL-yW2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="l8F-01-h9i"/>
                 <constraint firstItem="Usg-iA-lA6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rZQ-EF-93A"/>
                 <constraint firstItem="rBD-vm-aq2" firstAttribute="trailing" secondItem="awb-pA-PnR" secondAttribute="trailing" constant="-10" id="sDc-8a-994"/>
                 <constraint firstItem="Usg-iA-lA6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xm8-a4-H9O"/>
@@ -94,3 +94,4 @@
         <image name="ExerciseBackground1" width="164" height="164"/>
     </resources>
 </document>
+

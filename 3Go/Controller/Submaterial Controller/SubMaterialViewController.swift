@@ -7,14 +7,13 @@
 
 import UIKit
 
-class SubMaterialViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class SubMaterialViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var subMaterials = [subMaterial]()
     @IBOutlet weak var subMaterialExerciseTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         //Register Table
         subMaterialExerciseTableView.register(UINib.init(nibName: "subMaterialCell", bundle: nil), forCellReuseIdentifier: "subMaterialCell")
@@ -30,18 +29,18 @@ class SubMaterialViewController: UIViewController, UITableViewDelegate, UITableV
         subMaterials.append(subMaterial4)
         
         subMaterialExerciseTableView.reloadData()
-        
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return subMaterials.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = subMaterialExerciseTableView.dequeueReusableCell(withIdentifier: "subMaterialCell", for: indexPath)as! subMaterialCell
-        
+        let cell = subMaterialExerciseTableView.dequeueReusableCell(withIdentifier: "subMaterialCell", for: indexPath) as! subMaterialCell
         let subMaterial = subMaterials[indexPath.row]
         cell.numberLabel.text = subMaterial.numLabel
         cell.subMaterialTitle.text = subMaterial.subMaterialTitle
@@ -49,6 +48,7 @@ class SubMaterialViewController: UIViewController, UITableViewDelegate, UITableV
         
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
     }

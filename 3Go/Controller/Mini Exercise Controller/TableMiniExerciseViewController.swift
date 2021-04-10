@@ -23,7 +23,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.stepLabel.text = "\(Step(step: "Step 1").step)"
+        self.stepLabel.text = "Step 1"
         self.tapHere.isHidden = true
         self.wrongLabel.isHidden = true
         self.nextStep.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
@@ -113,7 +113,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
             if self.stepLabel.text == "Step 1" {
                 let destination = segue.destination as? SolutionViewController
                 destination?.navbarTitle = "Solution"
-                destination?.solution = "Ubah cos2x menjadi sin\n\nUntuk α = sudut lancip, maka (90° − α) merupakan sudut-sudut kuadran I. Dalam trigonometri, relasi sudut dinyatakan sebagai berikut :\nsin (90° − α) = cos α\n\nSehingga pada kuadran satu di mana sudut sisi kurang dari 90°, persamaan cosinus bisa dinyatakan sebagai\nCos x = sin (90° - x)\n\nUbah cos2x menjadi sin, maka jawabannya menjadi:\nCos x = sin (90° - x)"
+                destination?.solution = "Ubah cos2x menjadi sin\n\nUntuk α = sudut lancip, maka (90° − α) merupakan sudut-sudut kuadran I. Dalam trigonometri, relasi sudut dinyatakan sebagai berikut:\nsin (90° − α) = cos α\n\nSehingga pada kuadran satu di mana sudut sisi kurang dari 90°, persamaan cosinus bisa dinyatakan sebagai\nCos x = sin (90° - x)\n\nUbah cos2x menjadi sin, maka jawabannya menjadi:\nCos x = sin (90° - x)"
             } else if self.stepLabel.text == "Step 2" {
                 let destination = segue.destination as? SolutionViewController
                 destination?.navbarTitle = "Solution"

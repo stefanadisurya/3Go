@@ -11,8 +11,14 @@ class ExerciseListViewController: UIViewController, UICollectionViewDelegate, UI
 
     @IBOutlet weak var exerciseCollectionView: UICollectionView!
     
-    var materialExercise = ["Trigonometry", "Trigonometry Integral",
-    "Graph of Trigonometry Functions", "Trigonometry Equation", "Limit of Trigonometry Function", "Derivatives of Trigonometry Function", "DATA 1", "DATA 2"]
+    var materialExercise = [
+        "Trigonometry",
+        "Trigonometry Integral",
+        "Graph of Trigonometry Functions",
+        "Trigonometry Equation",
+        "Limit of Trigonometry Function",
+        "Derivatives of Trigonometry Function"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +38,7 @@ class ExerciseListViewController: UIViewController, UICollectionViewDelegate, UI
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exerciseCellIdentifier", for: indexPath) as? ExerciseListCell
         cell?.title = materialExercise[indexPath.item]
         cell?.image = "ExerciseIconWhite" + String(indexPath.item + 1)
-//        cell?.image = "BoardClipExercise"
         return cell!
     }
 }
+

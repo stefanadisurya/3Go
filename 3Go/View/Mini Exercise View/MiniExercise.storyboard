@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u0j-bV-GXW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -11,8 +11,7 @@
         <!--Mini Exercise-->
         <scene sceneID="Bga-pC-oa5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tIb-sT-vAY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="4IR-0x-kt5" customClass="TableMiniExerciseViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="miniExercise" id="4IR-0x-kt5" customClass="TableMiniExerciseViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="079-tf-KSX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,13 +177,13 @@
                         <outlet property="wrongLabel" destination="PGT-kn-SPs" id="lgP-au-AQ2"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIb-sT-vAY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3518.4615384615386" y="88.862559241706151"/>
         </scene>
         <!--Step Table View Controller-->
         <scene sceneID="sFc-LS-NHv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZiR-0M-ZOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="GA6-X9-ayC" customClass="StepTableViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ke-HT-C9e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -232,13 +231,13 @@
                         <outlet property="stepListTableView" destination="g1Z-3u-Wiu" id="umi-y9-UVD"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZiR-0M-ZOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4570.7692307692305" y="-669.66824644549763"/>
         </scene>
         <!--Solution-->
         <scene sceneID="ffe-Ix-4pg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Hy-Aq-4KL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="Solution" id="Af5-tb-NQw" customClass="SolutionViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r3d-7L-F4p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -281,13 +280,13 @@ Cos x = sin (90° - x)</string>
                         <outlet property="solutionLabel" destination="hIh-ta-7OM" id="UuS-Dv-Qf5"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Hy-Aq-4KL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4570.7692307692305" y="88.862559241706151"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i5m-aR-8ri">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YJh-Xe-htv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u0j-bV-GXW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FuI-PV-k2e">
@@ -299,6 +298,7 @@ Cos x = sin (90° - x)</string>
                         <segue destination="4IR-0x-kt5" kind="relationship" relationship="rootViewController" id="JZa-Ol-qFj"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YJh-Xe-htv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2590.7692307692305" y="88.862559241706151"/>
         </scene>
