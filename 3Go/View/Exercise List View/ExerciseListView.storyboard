@@ -11,7 +11,7 @@
         <!--Exercise-->
         <scene sceneID="3da-ts-S6w">
             <objects>
-                <viewController id="VYn-8b-pEA" customClass="ExerciseListController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="VYn-8b-pEA" customClass="ExerciseListController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="isn-3R-ep9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="1931.8840579710147" y="197.54464285714286"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--SubMaterialTable-->
         <scene sceneID="8lK-9O-wma">
             <objects>
-                <viewControllerPlaceholder id="nUm-40-sgx" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="SubMaterialTable" id="nUm-40-sgx" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="V6I-vJ-03z"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cv-H7-B1F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

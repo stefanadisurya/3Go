@@ -50,4 +50,8 @@ class ExerciseListController : UIViewController, UISearchBarDelegate, UICollecti
         return cell!
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "navigateToExerciseList", sender: nil)
+    }
+    
 }

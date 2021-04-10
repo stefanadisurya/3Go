@@ -11,7 +11,7 @@
         <!--exerciseFinishViewControler-->
         <scene sceneID="sbd-M0-mB8">
             <objects>
-                <viewController title="exerciseFinishViewControler" id="4LK-RH-Vms" customClass="exerciseFinishViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="exerciseFinishViewControler" hidesBottomBarWhenPushed="YES" id="4LK-RH-Vms" customClass="exerciseFinishViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6xG-8k-JeI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

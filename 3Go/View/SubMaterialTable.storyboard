@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CeX-BL-qhW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -11,14 +11,14 @@
         <!--SubMaterialTable-->
         <scene sceneID="faG-tr-cyw">
             <objects>
-                <viewController title="SubMaterialTable" id="CeX-BL-qhW" customClass="SubMaterialViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SubMaterialTable" hidesBottomBarWhenPushed="YES" id="CeX-BL-qhW" customClass="SubMaterialViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ga7-c9-Z9G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="EQy-cX-rOs">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="CeX-BL-qhW" id="Mfr-Ju-awm"/>
                                     <outlet property="delegate" destination="CeX-BL-qhW" id="dE7-aU-kcW"/>
@@ -34,16 +34,31 @@
                             <constraint firstAttribute="bottom" secondItem="EQy-cX-rOs" secondAttribute="bottom" id="jbC-vq-x7e"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="L1S-DH-Osn"/>
                     <connections>
                         <outlet property="subMaterialExerciseTableView" destination="EQy-cX-rOs" id="lz0-lC-gyZ"/>
+                        <segue destination="YCd-f9-G7u" kind="show" identifier="navigateToExerciseListDetail" id="4gk-3a-TRH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s2r-wA-0iV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356.52173913043481" y="-58.258928571428569"/>
+            <point key="canvasLocation" x="1266.6666666666667" y="-58.258928571428569"/>
+        </scene>
+        <!--ExerciseListDetail-->
+        <scene sceneID="rNm-eA-gtN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExerciseListDetail" id="YCd-f9-G7u" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="i8g-X8-aRu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1f-nK-PEd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2061.594202898551" y="-38.169642857142854"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

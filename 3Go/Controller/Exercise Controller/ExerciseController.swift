@@ -27,6 +27,8 @@ class ExerciseController: UIViewController, UITableViewDelegate, UITableViewData
         
         setTimer()
         navigationItem.hidesBackButton = true
+        submitButton.isEnabled = false
+        submitButton.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         title = navigationTitle
     }
     
@@ -94,6 +96,8 @@ class ExerciseController: UIViewController, UITableViewDelegate, UITableViewData
         if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "answerCell", for: indexPath) as! AnswerCell
             cell.answer = answers[indexPath.row]
+            submitButton.isEnabled = true
+            submitButton.backgroundColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
             if cell.answer.content == self.correctAnswer[0] {
                 isCorrect = true
             } else {

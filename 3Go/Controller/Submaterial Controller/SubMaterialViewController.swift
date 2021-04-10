@@ -50,7 +50,7 @@ class SubMaterialViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        performSegue(withIdentifier: "navigateToExerciseListDetail", sender: nil)
     }
 
 }
