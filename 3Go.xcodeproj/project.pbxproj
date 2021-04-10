@@ -18,6 +18,21 @@
 		F3803EAF261D583D00B594C4 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3803EAE261D583D00B594C4 /* Answer.swift */; };
 		F3803EB2261D5E6600B594C4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3803EB1261D5E6600B594C4 /* Question.swift */; };
 		F3803EB5261D5FB000B594C4 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3803EB4261D5FB000B594C4 /* Step.swift */; };
+		F3BD0EED26212B0000E89D75 /* ExerciseListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3BD0EEC26212B0000E89D75 /* ExerciseListView.storyboard */; };
+		F3BD0EF026212B3D00E89D75 /* ExerciseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BD0EEF26212B3D00E89D75 /* ExerciseListController.swift */; };
+		F3BD0EF526212BDB00E89D75 /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BD0EF326212BDB00E89D75 /* ExerciseListViewController.swift */; };
+		F3BD0EF626212BDB00E89D75 /* ExerciseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BD0EF426212BDB00E89D75 /* ExerciseListViewController.xib */; };
+		F3BD0EFD26212CAF00E89D75 /* ExerciseListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BD0EFB26212CAF00E89D75 /* ExerciseListCell.swift */; };
+		F3BD0EFE26212CAF00E89D75 /* ExerciseListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BD0EFC26212CAF00E89D75 /* ExerciseListCell.xib */; };
+		F3BD0F0326212D2C00E89D75 /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3BD0F0226212D2C00E89D75 /* Exercise.storyboard */; };
+		F3BD0F0726212D6B00E89D75 /* ExerciseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BD0F0626212D6B00E89D75 /* ExerciseController.swift */; };
+		F3BD0F0D26212E7000E89D75 /* ExerciseListDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3BD0F0C26212E7000E89D75 /* ExerciseListDetail.storyboard */; };
+		F3BD0F1026212E9C00E89D75 /* ExerciseListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BD0F0F26212E9C00E89D75 /* ExerciseListDetailViewController.swift */; };
+		F3BD0F132621304500E89D75 /* ExerciseListDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BD0F122621304500E89D75 /* ExerciseListDetail.swift */; };
+		F3BD0F18262130E300E89D75 /* ExerciseListDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BD0F16262130E300E89D75 /* ExerciseListDetailCell.swift */; };
+		F3BD0F19262130E300E89D75 /* ExerciseListDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BD0F17262130E300E89D75 /* ExerciseListDetailCell.xib */; };
+		F3BD0F1F262131A200E89D75 /* exerciseFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BD0F1E262131A200E89D75 /* exerciseFinishViewController.swift */; };
+		F3BD0F23262131BC00E89D75 /* exerciseFinish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3BD0F22262131BC00E89D75 /* exerciseFinish.storyboard */; };
 		F3FE03DC261EBCDD002E35D6 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE03DB261EBCDD002E35D6 /* CustomCell.swift */; };
 		F3FE03DF261ED6E3002E35D6 /* StepTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE03DE261ED6E3002E35D6 /* StepTableViewController.swift */; };
 		F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E2F261ADDC000FA01D0 /* AppDelegate.swift */; };
@@ -40,6 +55,21 @@
 		F3803EAE261D583D00B594C4 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		F3803EB1261D5E6600B594C4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F3803EB4261D5FB000B594C4 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		F3BD0EEC26212B0000E89D75 /* ExerciseListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExerciseListView.storyboard; sourceTree = "<group>"; };
+		F3BD0EEF26212B3D00E89D75 /* ExerciseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListController.swift; sourceTree = "<group>"; };
+		F3BD0EF326212BDB00E89D75 /* ExerciseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
+		F3BD0EF426212BDB00E89D75 /* ExerciseListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseListViewController.xib; sourceTree = "<group>"; };
+		F3BD0EFB26212CAF00E89D75 /* ExerciseListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListCell.swift; sourceTree = "<group>"; };
+		F3BD0EFC26212CAF00E89D75 /* ExerciseListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseListCell.xib; sourceTree = "<group>"; };
+		F3BD0F0226212D2C00E89D75 /* Exercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
+		F3BD0F0626212D6B00E89D75 /* ExerciseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseController.swift; sourceTree = "<group>"; };
+		F3BD0F0C26212E7000E89D75 /* ExerciseListDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExerciseListDetail.storyboard; sourceTree = "<group>"; };
+		F3BD0F0F26212E9C00E89D75 /* ExerciseListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListDetailViewController.swift; sourceTree = "<group>"; };
+		F3BD0F122621304500E89D75 /* ExerciseListDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListDetail.swift; sourceTree = "<group>"; };
+		F3BD0F16262130E300E89D75 /* ExerciseListDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListDetailCell.swift; sourceTree = "<group>"; };
+		F3BD0F17262130E300E89D75 /* ExerciseListDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseListDetailCell.xib; sourceTree = "<group>"; };
+		F3BD0F1E262131A200E89D75 /* exerciseFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseFinishViewController.swift; sourceTree = "<group>"; };
+		F3BD0F22262131BC00E89D75 /* exerciseFinish.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = exerciseFinish.storyboard; sourceTree = "<group>"; };
 		F3FE03DB261EBCDD002E35D6 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		F3FE03DE261ED6E3002E35D6 /* StepTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTableViewController.swift; sourceTree = "<group>"; };
 		F3FE6E2C261ADDC000FA01D0 /* 3Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +129,102 @@
 			path = "Mini Exercise Controller";
 			sourceTree = "<group>";
 		};
+		F3BD0EEA26212AAE00E89D75 /* Exercise List View */ = {
+			isa = PBXGroup;
+			children = (
+				F3BD0F15262130B800E89D75 /* Exercise List Detail Cell */,
+				F3BD0EF926212C6C00E89D75 /* Exercise List Cell */,
+				F3BD0F0B26212E5300E89D75 /* Exercise List Detail View */,
+				F3BD0EEC26212B0000E89D75 /* ExerciseListView.storyboard */,
+			);
+			path = "Exercise List View";
+			sourceTree = "<group>";
+		};
+		F3BD0EEB26212ABB00E89D75 /* Exercise List Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3BD0F0A26212E1900E89D75 /* Exercise List Detail View Controller */,
+				F3BD0EF226212BB900E89D75 /* Exercise List View Controller */,
+				F3BD0EEF26212B3D00E89D75 /* ExerciseListController.swift */,
+			);
+			path = "Exercise List Controller";
+			sourceTree = "<group>";
+		};
+		F3BD0EF226212BB900E89D75 /* Exercise List View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3BD0EF326212BDB00E89D75 /* ExerciseListViewController.swift */,
+				F3BD0EF426212BDB00E89D75 /* ExerciseListViewController.xib */,
+			);
+			path = "Exercise List View Controller";
+			sourceTree = "<group>";
+		};
+		F3BD0EF926212C6C00E89D75 /* Exercise List Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3BD0EFB26212CAF00E89D75 /* ExerciseListCell.swift */,
+				F3BD0EFC26212CAF00E89D75 /* ExerciseListCell.xib */,
+			);
+			path = "Exercise List Cell";
+			sourceTree = "<group>";
+		};
+		F3BD0F0126212D0B00E89D75 /* Exercise View */ = {
+			isa = PBXGroup;
+			children = (
+				F3BD0F0226212D2C00E89D75 /* Exercise.storyboard */,
+			);
+			path = "Exercise View";
+			sourceTree = "<group>";
+		};
+		F3BD0F0526212D5A00E89D75 /* Exercise Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3BD0F0626212D6B00E89D75 /* ExerciseController.swift */,
+			);
+			path = "Exercise Controller";
+			sourceTree = "<group>";
+		};
+		F3BD0F0A26212E1900E89D75 /* Exercise List Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3BD0F0F26212E9C00E89D75 /* ExerciseListDetailViewController.swift */,
+			);
+			path = "Exercise List Detail View Controller";
+			sourceTree = "<group>";
+		};
+		F3BD0F0B26212E5300E89D75 /* Exercise List Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				F3BD0F0C26212E7000E89D75 /* ExerciseListDetail.storyboard */,
+			);
+			path = "Exercise List Detail View";
+			sourceTree = "<group>";
+		};
+		F3BD0F15262130B800E89D75 /* Exercise List Detail Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3BD0F16262130E300E89D75 /* ExerciseListDetailCell.swift */,
+				F3BD0F17262130E300E89D75 /* ExerciseListDetailCell.xib */,
+			);
+			path = "Exercise List Detail Cell";
+			sourceTree = "<group>";
+		};
+		F3BD0F1C2621315B00E89D75 /* Exercise Completion View */ = {
+			isa = PBXGroup;
+			children = (
+				F3BD0F22262131BC00E89D75 /* exerciseFinish.storyboard */,
+			);
+			path = "Exercise Completion View";
+			sourceTree = "<group>";
+		};
+		F3BD0F1D2621317800E89D75 /* Exercise Completion Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3BD0F1E262131A200E89D75 /* exerciseFinishViewController.swift */,
+			);
+			path = "Exercise Completion Controller";
+			sourceTree = "<group>";
+		};
 		F3FE6E23261ADDBF00FA01D0 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +263,7 @@
 				F3803EB1261D5E6600B594C4 /* Question.swift */,
 				F3803EB4261D5FB000B594C4 /* Step.swift */,
 				F35BCCAB261F4830001ACEF7 /* subMaterial.swift */,
+				F3BD0F122621304500E89D75 /* ExerciseListDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,6 +271,9 @@
 		F3FE6E46261ADDFC00FA01D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F3BD0F1C2621315B00E89D75 /* Exercise Completion View */,
+				F3BD0F0126212D0B00E89D75 /* Exercise View */,
+				F3BD0EEA26212AAE00E89D75 /* Exercise List View */,
 				671AC2C9261F3F6D00FFD824 /* Submaterial Cell */,
 				F3708911261C56EE0034E509 /* Mini Exercise View */,
 				F3FE6E35261ADDC000FA01D0 /* Main.storyboard */,
@@ -155,6 +285,9 @@
 		F3FE6E47261ADE0200FA01D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F3BD0F1D2621317800E89D75 /* Exercise Completion Controller */,
+				F3BD0F0526212D5A00E89D75 /* Exercise Controller */,
+				F3BD0EEB26212ABB00E89D75 /* Exercise List Controller */,
 				F35BCCA6261F47E5001ACEF7 /* Submaterial Controller */,
 				F3708912261C570B0034E509 /* Mini Exercise Controller */,
 				F3FE6E33261ADDC000FA01D0 /* ViewController.swift */,
@@ -220,10 +353,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3FE6E3C261ADDC000FA01D0 /* LaunchScreen.storyboard in Resources */,
+				F3BD0EFE26212CAF00E89D75 /* ExerciseListCell.xib in Resources */,
 				F3FE6E39261ADDC000FA01D0 /* Assets.xcassets in Resources */,
+				F3BD0EF626212BDB00E89D75 /* ExerciseListViewController.xib in Resources */,
 				F3FE6E37261ADDC000FA01D0 /* Main.storyboard in Resources */,
 				F370890F261C56DB0034E509 /* MiniExercise.storyboard in Resources */,
+				F3BD0F19262130E300E89D75 /* ExerciseListDetailCell.xib in Resources */,
+				F3BD0F0D26212E7000E89D75 /* ExerciseListDetail.storyboard in Resources */,
+				F3BD0F0326212D2C00E89D75 /* Exercise.storyboard in Resources */,
+				F3BD0EED26212B0000E89D75 /* ExerciseListView.storyboard in Resources */,
 				671AC2CE261F3FE500FFD824 /* subMaterialCell.xib in Resources */,
+				F3BD0F23262131BC00E89D75 /* exerciseFinish.storyboard in Resources */,
 				F35BCCB0261F4876001ACEF7 /* SubMaterialTable.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,19 +375,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3BD0EF526212BDB00E89D75 /* ExerciseListViewController.swift in Sources */,
+				F3BD0F1F262131A200E89D75 /* exerciseFinishViewController.swift in Sources */,
 				F3708915261C5B2C0034E509 /* TableMiniExerciseViewController.swift in Sources */,
+				F3BD0F0726212D6B00E89D75 /* ExerciseController.swift in Sources */,
 				F3803EB2261D5E6600B594C4 /* Question.swift in Sources */,
 				F3803EB5261D5FB000B594C4 /* Step.swift in Sources */,
 				F3FE03DF261ED6E3002E35D6 /* StepTableViewController.swift in Sources */,
+				F3BD0EFD26212CAF00E89D75 /* ExerciseListCell.swift in Sources */,
 				F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */,
 				F35BCCA8261F47FD001ACEF7 /* SubMaterialViewController.swift in Sources */,
 				F3FE03DC261EBCDD002E35D6 /* CustomCell.swift in Sources */,
 				671AC2CD261F3FE500FFD824 /* subMaterialCell.swift in Sources */,
 				F370891B261C65930034E509 /* AnswerCell.swift in Sources */,
+				F3BD0EF026212B3D00E89D75 /* ExerciseListController.swift in Sources */,
 				F3803EAF261D583D00B594C4 /* Answer.swift in Sources */,
 				F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */,
 				F35BCCAC261F4830001ACEF7 /* subMaterial.swift in Sources */,
+				F3BD0F132621304500E89D75 /* ExerciseListDetail.swift in Sources */,
 				F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */,
+				F3BD0F18262130E300E89D75 /* ExerciseListDetailCell.swift in Sources */,
+				F3BD0F1026212E9C00E89D75 /* ExerciseListDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
