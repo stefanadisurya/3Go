@@ -22,15 +22,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SCc-7i-bkh">
-                                <rect key="frame" x="0.0" y="109.5" width="414" height="339"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="SCc-7i-bkh">
+                                <rect key="frame" x="0.0" y="109.5" width="414" height="450"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="339" id="3iK-LA-tEC"/>
+                                    <constraint firstAttribute="height" constant="450" id="Mml-jv-yuI"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="questionCell" id="m9C-xL-mD5" customClass="CustomCell" customModule="_Go" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m9C-xL-mD5" id="YQ0-NH-QSJ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
@@ -55,7 +55,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="stepCell" id="cWL-4t-wfg" customClass="CustomCell" customModule="_Go" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="71" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="98.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cWL-4t-wfg" id="T3G-NW-b5O">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -75,17 +75,17 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="answerCell" id="GyK-PR-Ksp" customClass="AnswerCell" customModule="_Go" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="114.5" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="142" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GyK-PR-Ksp" id="1Ox-lT-Haa">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aO1-1Q-ypV">
-                                                    <rect key="frame" x="20" y="11" width="44" height="21"/>
+                                                    <rect key="frame" x="20" y="11" width="44" height="21.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB8-t2-bh3">
-                                                    <rect key="frame" x="76" y="11" width="318" height="21"/>
+                                                    <rect key="frame" x="76" y="11" width="318" height="21.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="318" id="O0W-T9-wiK"/>
                                                     </constraints>
@@ -130,7 +130,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw1-Gg-YIq">
-                                <rect key="frame" x="16" y="473.5" width="56" height="29"/>
+                                <rect key="frame" x="16" y="584.5" width="56" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Tap here"/>
                                 <connections>
@@ -138,14 +138,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your answer is wrong!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGT-kn-SPs">
-                                <rect key="frame" x="16" y="450.5" width="152" height="17"/>
+                                <rect key="frame" x="16" y="561.5" width="152" height="17"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="m4y-uG-mcz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PGT-kn-SPs" firstAttribute="leading" secondItem="m4y-uG-mcz" secondAttribute="leading" constant="16" id="3Ah-za-TjV"/>
                             <constraint firstItem="SCc-7i-bkh" firstAttribute="centerX" secondItem="079-tf-KSX" secondAttribute="centerX" id="6Gv-Ds-Ntu"/>
@@ -160,6 +160,7 @@
                             <constraint firstItem="SCc-7i-bkh" firstAttribute="leading" secondItem="m4y-uG-mcz" secondAttribute="leading" id="VRQ-aj-MCI"/>
                             <constraint firstItem="5OQ-D8-fSa" firstAttribute="bottom" secondItem="m4y-uG-mcz" secondAttribute="bottom" id="bTK-MD-Cow"/>
                             <constraint firstItem="SCc-7i-bkh" firstAttribute="top" secondItem="W7E-h9-0O1" secondAttribute="bottom" constant="16.333333333333343" id="eTl-Nz-aKO"/>
+                            <constraint firstItem="SCc-7i-bkh" firstAttribute="top" secondItem="079-tf-KSX" secondAttribute="top" constant="109.5" id="ijG-q9-AUC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mini Exercise" id="xOg-cB-4Gb">
@@ -286,6 +287,9 @@ Cos x = sin (90° - x)</string>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
