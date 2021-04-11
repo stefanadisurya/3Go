@@ -7,8 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A13EB1692621C43700693DFB /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EB1682621C43700693DFB /* SummaryViewController.swift */; };
+		A13EB17A2621C9CA00693DFB /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EB1792621C9CA00693DFB /* Summary.swift */; };
+		A13EB1872621FC2000693DFB /* DummySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EB1862621FC2000693DFB /* DummySummary.swift */; };
+		A13EB1992622084300693DFB /* SummarysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EB1972622084300693DFB /* SummarysTableViewCell.swift */; };
+		A13EB19A2622084300693DFB /* SummarysTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13EB1982622084300693DFB /* SummarysTableViewCell.xib */; };
 		A166F9FD2620787400CD0245 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A166F9FC2620787400CD0245 /* Profile.storyboard */; };
 		A166FA002620795E00CD0245 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166F9FF2620795E00CD0245 /* ProfileViewController.swift */; };
+		A1F90C4226231C7000FBA901 /* SummaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F90C4126231C7000FBA901 /* SummaryDetailViewController.swift */; };
+		A1F90C52262322F200FBA901 /* SumDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F90C50262322F200FBA901 /* SumDetailTableViewCell.swift */; };
+		A1F90C53262322F200FBA901 /* SumDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F90C51262322F200FBA901 /* SumDetailTableViewCell.xib */; };
+		A1F90C56262324E100FBA901 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F90C55262324E100FBA901 /* Detail.swift */; };
+		A1F90C592623252900FBA901 /* DummyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F90C582623252900FBA901 /* DummyDetail.swift */; };
+		A1F90C6126233C1900FBA901 /* SumResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F90C6026233C1900FBA901 /* SumResultViewController.swift */; };
+		A1F90C6526233E2800FBA901 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F90C6326233E2800FBA901 /* ResultTableViewCell.swift */; };
+		A1F90C6626233E2800FBA901 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F90C6426233E2800FBA901 /* ResultTableViewCell.xib */; };
+		A1F90C692623411400FBA901 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F90C682623411400FBA901 /* Result.swift */; };
+		A1F90C6C2623417400FBA901 /* DummyResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F90C6B2623417400FBA901 /* DummyResult.swift */; };
 		F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E2F261ADDC000FA01D0 /* AppDelegate.swift */; };
 		F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E31261ADDC000FA01D0 /* SceneDelegate.swift */; };
 		F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE6E33261ADDC000FA01D0 /* ViewController.swift */; };
@@ -18,8 +33,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A13EB1682621C43700693DFB /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = SOURCE_ROOT; };
+		A13EB1792621C9CA00693DFB /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = SOURCE_ROOT; };
+		A13EB1862621FC2000693DFB /* DummySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummySummary.swift; sourceTree = SOURCE_ROOT; };
+		A13EB1972622084300693DFB /* SummarysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarysTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A13EB1982622084300693DFB /* SummarysTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummarysTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		A166F9FC2620787400CD0245 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		A166F9FF2620795E00CD0245 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		A1F90C4126231C7000FBA901 /* SummaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		A1F90C50262322F200FBA901 /* SumDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumDetailTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A1F90C51262322F200FBA901 /* SumDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SumDetailTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		A1F90C55262324E100FBA901 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = SOURCE_ROOT; };
+		A1F90C582623252900FBA901 /* DummyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDetail.swift; sourceTree = SOURCE_ROOT; };
+		A1F90C6026233C1900FBA901 /* SumResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumResultViewController.swift; sourceTree = SOURCE_ROOT; };
+		A1F90C6326233E2800FBA901 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A1F90C6426233E2800FBA901 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		A1F90C682623411400FBA901 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = SOURCE_ROOT; };
+		A1F90C6B2623417400FBA901 /* DummyResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyResult.swift; sourceTree = SOURCE_ROOT; };
 		F3FE6E2C261ADDC000FA01D0 /* 3Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FE6E2F261ADDC000FA01D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3FE6E31261ADDC000FA01D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +107,12 @@
 		F3FE6E44261ADDE800FA01D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A13EB1792621C9CA00693DFB /* Summary.swift */,
+				A13EB1862621FC2000693DFB /* DummySummary.swift */,
+				A1F90C55262324E100FBA901 /* Detail.swift */,
+				A1F90C582623252900FBA901 /* DummyDetail.swift */,
+				A1F90C682623411400FBA901 /* Result.swift */,
+				A1F90C6B2623417400FBA901 /* DummyResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +121,12 @@
 			isa = PBXGroup;
 			children = (
 				A166F9FC2620787400CD0245 /* Profile.storyboard */,
+				A13EB1972622084300693DFB /* SummarysTableViewCell.swift */,
+				A13EB1982622084300693DFB /* SummarysTableViewCell.xib */,
+				A1F90C50262322F200FBA901 /* SumDetailTableViewCell.swift */,
+				A1F90C51262322F200FBA901 /* SumDetailTableViewCell.xib */,
+				A1F90C6326233E2800FBA901 /* ResultTableViewCell.swift */,
+				A1F90C6426233E2800FBA901 /* ResultTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,6 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				A166F9FF2620795E00CD0245 /* ProfileViewController.swift */,
+				A13EB1682621C43700693DFB /* SummaryViewController.swift */,
+				A1F90C4126231C7000FBA901 /* SummaryDetailViewController.swift */,
+				A1F90C6026233C1900FBA901 /* SumResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,8 +199,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F90C53262322F200FBA901 /* SumDetailTableViewCell.xib in Resources */,
 				F3FE6E3C261ADDC000FA01D0 /* LaunchScreen.storyboard in Resources */,
 				F3FE6E39261ADDC000FA01D0 /* Assets.xcassets in Resources */,
+				A13EB19A2622084300693DFB /* SummarysTableViewCell.xib in Resources */,
+				A1F90C6626233E2800FBA901 /* ResultTableViewCell.xib in Resources */,
 				A166F9FD2620787400CD0245 /* Profile.storyboard in Resources */,
 				F3FE6E37261ADDC000FA01D0 /* Main.storyboard in Resources */,
 			);
@@ -170,8 +218,20 @@
 			files = (
 				A166FA002620795E00CD0245 /* ProfileViewController.swift in Sources */,
 				F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */,
+				A1F90C6526233E2800FBA901 /* ResultTableViewCell.swift in Sources */,
+				A13EB1992622084300693DFB /* SummarysTableViewCell.swift in Sources */,
 				F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */,
+				A1F90C4226231C7000FBA901 /* SummaryDetailViewController.swift in Sources */,
+				A1F90C692623411400FBA901 /* Result.swift in Sources */,
+				A1F90C6C2623417400FBA901 /* DummyResult.swift in Sources */,
 				F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */,
+				A1F90C52262322F200FBA901 /* SumDetailTableViewCell.swift in Sources */,
+				A13EB1692621C43700693DFB /* SummaryViewController.swift in Sources */,
+				A13EB17A2621C9CA00693DFB /* Summary.swift in Sources */,
+				A1F90C56262324E100FBA901 /* Detail.swift in Sources */,
+				A13EB1872621FC2000693DFB /* DummySummary.swift in Sources */,
+				A1F90C592623252900FBA901 /* DummyDetail.swift in Sources */,
+				A1F90C6126233C1900FBA901 /* SumResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

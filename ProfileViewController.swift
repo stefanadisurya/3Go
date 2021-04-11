@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var ProfileTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+  
         title = "Profile"
         
         ProfileTableView.delegate = self
@@ -45,7 +46,9 @@ class ProfileViewController: UIViewController {
 extension ProfileViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "summarysegue", sender: self)
     }
+   
     
 }
 
@@ -60,6 +63,7 @@ extension ProfileViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile View Controller-->
+        <!--Summary-->
         <scene sceneID="RRD-Ox-Fty">
             <objects>
                 <viewController id="pwg-oK-kad" customClass="ProfileViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,11 +28,12 @@
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w8G-2o-Hea">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="w8G-2o-Hea">
                                 <rect key="frame" x="0.0" y="248" width="414" height="648"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="z1v-iP-Zja">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z1v-iP-Zja" id="Otk-9y-Vxw">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -57,14 +58,77 @@
                             <constraint firstItem="a4X-a7-6bt" firstAttribute="leading" secondItem="oZO-0Q-hYu" secondAttribute="leading" constant="20" id="yq2-8g-8SI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vKY-r6-6OC"/>
+                    <navigationItem key="navigationItem" title="Summary" id="vKY-r6-6OC"/>
                     <connections>
                         <outlet property="ProfileTableView" destination="w8G-2o-Hea" id="0Ih-kN-eeC"/>
+                        <segue destination="DAL-UD-0Lt" kind="show" identifier="summarysegue" id="nfv-di-0Tk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXE-wY-yqz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869.5652173913045" y="-571.20535714285711"/>
+            <point key="canvasLocation" x="1803" y="-571"/>
+        </scene>
+        <!--Summary-->
+        <scene sceneID="mqy-xU-ejw">
+            <objects>
+                <viewController id="DAL-UD-0Lt" customClass="SummaryViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JSZ-ZM-LGz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="1RA-qr-EQc">
+                                <rect key="frame" x="0.0" y="150" width="414" height="712"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZDx-sp-CCi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1RA-qr-EQc" firstAttribute="top" secondItem="ZDx-sp-CCi" secondAttribute="top" constant="10" id="1S2-gY-ObN"/>
+                            <constraint firstItem="ZDx-sp-CCi" firstAttribute="trailing" secondItem="1RA-qr-EQc" secondAttribute="trailing" id="3Ak-UU-per"/>
+                            <constraint firstItem="1RA-qr-EQc" firstAttribute="leading" secondItem="ZDx-sp-CCi" secondAttribute="leading" id="PJz-d8-c0W"/>
+                            <constraint firstItem="ZDx-sp-CCi" firstAttribute="bottom" secondItem="1RA-qr-EQc" secondAttribute="bottom" id="Vmr-ej-1k3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Summary" largeTitleDisplayMode="always" id="hER-Dn-kIe"/>
+                    <connections>
+                        <outlet property="summaryTableView" destination="1RA-qr-EQc" id="4Uo-7E-VgE"/>
+                        <segue destination="Lbu-Af-NP4" kind="show" identifier="summarydetail" id="FpW-1s-ALr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KoK-PI-IOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2633" y="-571"/>
+        </scene>
+        <!--Summary Detail View Controller-->
+        <scene sceneID="qeW-Tr-SN8">
+            <objects>
+                <viewController id="Lbu-Af-NP4" customClass="SummaryDetailViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A5b-hp-Kz3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="zkP-F2-U3w">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eTl-dg-A9g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eTl-dg-A9g" firstAttribute="trailing" secondItem="zkP-F2-U3w" secondAttribute="trailing" id="Csa-mc-nAe"/>
+                            <constraint firstItem="zkP-F2-U3w" firstAttribute="leading" secondItem="eTl-dg-A9g" secondAttribute="leading" id="K9T-ne-Ero"/>
+                            <constraint firstItem="zkP-F2-U3w" firstAttribute="top" secondItem="eTl-dg-A9g" secondAttribute="top" id="KBW-aD-Yfi"/>
+                            <constraint firstItem="eTl-dg-A9g" firstAttribute="bottom" secondItem="zkP-F2-U3w" secondAttribute="bottom" id="QTh-nP-BfA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="9Od-w3-RKE"/>
+                    <connections>
+                        <outlet property="summaryDetailTableView" destination="zkP-F2-U3w" id="UXY-RX-WsU"/>
+                        <segue destination="WWe-dw-YeJ" kind="show" identifier="listsegue" id="b2W-xF-8Fw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbx-K6-Ouh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3419" y="-571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pxM-Um-BxQ">
@@ -88,6 +152,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULz-j8-mOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="961" y="-571"/>
+        </scene>
+        <!--Sum Result View Controller-->
+        <scene sceneID="HIS-MB-g2G">
+            <objects>
+                <viewController id="WWe-dw-YeJ" customClass="SumResultViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xCq-dd-y6c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="JN8-li-5Ed">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sWf-eh-WzG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sWf-eh-WzG" firstAttribute="bottom" secondItem="JN8-li-5Ed" secondAttribute="bottom" id="cMC-rJ-ioM"/>
+                            <constraint firstItem="JN8-li-5Ed" firstAttribute="leading" secondItem="sWf-eh-WzG" secondAttribute="leading" id="uId-dG-r26"/>
+                            <constraint firstItem="JN8-li-5Ed" firstAttribute="top" secondItem="sWf-eh-WzG" secondAttribute="top" id="y6P-dH-jGl"/>
+                            <constraint firstItem="sWf-eh-WzG" firstAttribute="trailing" secondItem="JN8-li-5Ed" secondAttribute="trailing" id="zuL-td-8e3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="W1g-e3-ZxK">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="ktF-5Y-rHb">
+                            <rect key="frame" x="104" y="5.5" width="206" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Easy"/>
+                                <segment title="Medium"/>
+                                <segment title="Hard"/>
+                            </segments>
+                            <connections>
+                                <action selector="diffcultyDidChange:" destination="WWe-dw-YeJ" eventType="valueChanged" id="ZPI-jY-VxK"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ResultTableView" destination="JN8-li-5Ed" id="E7a-11-VHV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zes-1K-7u2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3419" y="173"/>
         </scene>
     </scenes>
     <resources>
