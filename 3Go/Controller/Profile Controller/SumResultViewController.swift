@@ -24,6 +24,8 @@ class SumResultViewController: UIViewController, UITableViewDataSource, UITableV
           
       // Menghubungkan berkas XIB untuk HeroTableViewCell dengn summaryTableView.
       ResultTableView.register(UINib(nibName: "ResultTableViewCell", bundle: nil), forCellReuseIdentifier: "resultcell")
+        
+        ResultTableView.reloadData()
     }
     
     @IBAction func diffcultyDidChange(_ sender: UISegmentedControl) {

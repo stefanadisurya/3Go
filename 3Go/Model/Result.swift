@@ -19,13 +19,18 @@ class Result {
     }
     
     func addResult(judul : String, hasil : Bool, timer : String){
-//        for var myRecord in resultContainer {
-//            if myRecord.judul == judul {
-//                myRecord.hasil = false
-//                myRecord.timer = timer
-//                return
-//            }
-//        }
+        var pointer : Int = 0
+        
+        for myRecord in resultContainer {
+            if myRecord.judul == judul {
+                resultContainer[pointer].hasil = hasil
+                resultContainer[pointer].timer = timer
+                return
+            }
+            pointer += 1
+        }
+        
+        
         resultContainer.append(ResultDetail(judul: judul, hasil: hasil, timer: timer))
     }   
     
