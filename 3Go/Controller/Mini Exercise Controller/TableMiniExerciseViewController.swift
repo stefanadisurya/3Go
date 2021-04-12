@@ -19,6 +19,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
     var steps: [String] = ["Ubah cos2x menjadi sin, maka menjadi:"]
     var answers: [Answer] = Answer.generateData()
     var correctAnswer: [String] = ["cos 2x -> sin(90 - 2x)"]
+    var isCorrect: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
         self.stepLabel.text = "Step 1"
         self.tapHere.isHidden = true
         self.wrongLabel.isHidden = true
+        self.nextStep.isEnabled = false
         self.nextStep.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         self.nextStep.layer.cornerRadius = 15
     }
@@ -80,16 +82,12 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
         if indexPath.section == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "answerCell", for: indexPath) as! AnswerCell
             cell.answer = answers[indexPath.row]
+            self.nextStep.isEnabled = true
+            self.nextStep.backgroundColor = UIColor(red: 105/255, green: 48/255, blue: 195/255, alpha: 1)
             if cell.answer.content == self.correctAnswer[0] {
-                self.wrongLabel.isHidden = true
-                self.tapHere.isHidden = true
-                self.nextStep.isEnabled = true
-                self.nextStep.backgroundColor = UIColor(red: 105/255, green: 48/255, blue: 195/255, alpha: 1)
+                isCorrect = true
             } else {
-                self.wrongLabel.isHidden = false
-                self.tapHere.isHidden = false
-                self.nextStep.isEnabled = false
-                self.nextStep.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+                isCorrect = false
             }
         }
     }
@@ -127,15 +125,23 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
     }
     
     @IBAction func navigateToNextStep(_ sender: UIButton) {
-        if self.stepLabel.text == "Step 1" {
-            loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1), label: "\(Step(step: "Step 2").step)")
-            loadNewData(from: Answer.generateData2(), correct: "x1 = 24 + (k.72), x2 = 45 + (k.360)", step: "Setelah mengubah cos, cari nilai x1 dan x2. Maka nilainya adalah:")
-            myTableView.reloadData()
-        } else if self.stepLabel.text == "Step 2" {
-            loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), label: "\(Step(step: "Step 3").step)")
-            loadNewData(from: Answer.generateData3(), correct: "(18, 90, 162, 234)", step: "Nilai x1 dan x2 sudah ditemukan. Cari nilai k0, k1, k2, k3 untuk menentukan himpunan. Maka himpunannya menjadi:")
-            myTableView.reloadData()
+        if isCorrect {
+            self.wrongLabel.isHidden = true
+            self.tapHere.isHidden = true
+            if self.stepLabel.text == "Step 1" {
+                loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), label: "\(Step(step: "Step 2").step)")
+                loadNewData(from: Answer.generateData2(), correct: "x1 = 24 + (k.72), x2 = 45 + (k.360)", step: "Setelah mengubah cos, cari nilai x1 dan x2. Maka nilainya adalah:")
+                myTableView.reloadData()
+            } else if self.stepLabel.text == "Step 2" {
+                loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), label: "\(Step(step: "Step 3").step)")
+                loadNewData(from: Answer.generateData3(), correct: "(18, 90, 162, 234)", step: "Nilai x1 dan x2 sudah ditemukan. Cari nilai k0, k1, k2, k3 untuk menentukan himpunan. Maka himpunannya menjadi:")
+                myTableView.reloadData()
+            }
+        } else {
+            self.wrongLabel.isHidden = false
+            self.tapHere.isHidden = false
         }
+
     }
     
 }

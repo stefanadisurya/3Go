@@ -106,7 +106,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="answerLabel" destination="dB8-t2-bh3" id="4fj-wi-Jo9"/>
-                                            <outlet property="radioButton" destination="aO1-1Q-ypV" id="ZcD-TN-ehR"/>
+                                            <outlet property="radioButton" destination="aO1-1Q-ypV" id="xIZ-gt-DuW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
