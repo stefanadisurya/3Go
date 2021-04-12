@@ -21,6 +21,14 @@
 		F38B4D3C2623DD4E004452FD /* DetailMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D3B2623DD4E004452FD /* DetailMaterialViewController.swift */; };
 		F38B4D3F2623DE15004452FD /* SubMaterialMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D3E2623DE15004452FD /* SubMaterialMaterialViewController.swift */; };
 		F38B4D422623DEA1004452FD /* PreRequisiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D412623DEA1004452FD /* PreRequisiteViewController.swift */; };
+		F38B4D462623E36C004452FD /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D452623E36C004452FD /* Summary.swift */; };
+		F38B4D492623E3BF004452FD /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D482623E3BF004452FD /* Detail.swift */; };
+		F38B4D4C2623E3FB004452FD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D4B2623E3FB004452FD /* Result.swift */; };
+		F38B4D522623E72F004452FD /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D512623E72F004452FD /* SummaryViewController.swift */; };
+		F38B4D562623E8B4004452FD /* SummaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D552623E8B4004452FD /* SummaryDetailViewController.swift */; };
+		F38B4D5B2623EAB9004452FD /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D592623EAB9004452FD /* ResultTableViewCell.swift */; };
+		F38B4D5C2623EAB9004452FD /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38B4D5A2623EAB9004452FD /* ResultTableViewCell.xib */; };
+		F38B4D602623EAFF004452FD /* SumResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D5F2623EAFF004452FD /* SumResultViewController.swift */; };
 		F399DBFA262188BA008FFB11 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F399DBF9262188BA008FFB11 /* Profile.storyboard */; };
 		F399DBFD262188DA008FFB11 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399DBFC262188DA008FFB11 /* ProfileViewController.swift */; };
 		F399DC2F26218ADD008FFB11 /* Material.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F399DC2E26218ADD008FFB11 /* Material.storyboard */; };
@@ -68,6 +76,14 @@
 		F38B4D3B2623DD4E004452FD /* DetailMaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMaterialViewController.swift; sourceTree = "<group>"; };
 		F38B4D3E2623DE15004452FD /* SubMaterialMaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMaterialMaterialViewController.swift; sourceTree = "<group>"; };
 		F38B4D412623DEA1004452FD /* PreRequisiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreRequisiteViewController.swift; sourceTree = "<group>"; };
+		F38B4D452623E36C004452FD /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		F38B4D482623E3BF004452FD /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		F38B4D4B2623E3FB004452FD /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F38B4D512623E72F004452FD /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		F38B4D552623E8B4004452FD /* SummaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDetailViewController.swift; sourceTree = "<group>"; };
+		F38B4D592623EAB9004452FD /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		F38B4D5A2623EAB9004452FD /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
+		F38B4D5F2623EAFF004452FD /* SumResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumResultViewController.swift; sourceTree = "<group>"; };
 		F399DBF9262188BA008FFB11 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		F399DBFC262188DA008FFB11 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F399DC2E26218ADD008FFB11 /* Material.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Material.storyboard; sourceTree = "<group>"; };
@@ -158,9 +174,19 @@
 			path = "Mini Exercise Controller";
 			sourceTree = "<group>";
 		};
+		F38B4D582623EA8C004452FD /* Result Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F38B4D592623EAB9004452FD /* ResultTableViewCell.swift */,
+				F38B4D5A2623EAB9004452FD /* ResultTableViewCell.xib */,
+			);
+			path = "Result Table View Cell";
+			sourceTree = "<group>";
+		};
 		F399DBF7262188A2008FFB11 /* Profile View */ = {
 			isa = PBXGroup;
 			children = (
+				F38B4D582623EA8C004452FD /* Result Table View Cell */,
 				F399DBF9262188BA008FFB11 /* Profile.storyboard */,
 			);
 			path = "Profile View";
@@ -170,6 +196,9 @@
 			isa = PBXGroup;
 			children = (
 				F399DBFC262188DA008FFB11 /* ProfileViewController.swift */,
+				F38B4D512623E72F004452FD /* SummaryViewController.swift */,
+				F38B4D552623E8B4004452FD /* SummaryDetailViewController.swift */,
+				F38B4D5F2623EAFF004452FD /* SumResultViewController.swift */,
 			);
 			path = "Profile Controller";
 			sourceTree = "<group>";
@@ -330,6 +359,9 @@
 				F35BCCAB261F4830001ACEF7 /* subMaterial.swift */,
 				F3BD0F122621304500E89D75 /* ExerciseListDetail.swift */,
 				F399DC3726218B2E008FFB11 /* Material.swift */,
+				F38B4D452623E36C004452FD /* Summary.swift */,
+				F38B4D482623E3BF004452FD /* Detail.swift */,
+				F38B4D4B2623E3FB004452FD /* Result.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -432,6 +464,7 @@
 				F3BD0F0D26212E7000E89D75 /* ExerciseListDetail.storyboard in Resources */,
 				F3BD0F0326212D2C00E89D75 /* Exercise.storyboard in Resources */,
 				F3BD0EED26212B0000E89D75 /* ExerciseListView.storyboard in Resources */,
+				F38B4D5C2623EAB9004452FD /* ResultTableViewCell.xib in Resources */,
 				671AC2CE261F3FE500FFD824 /* subMaterialCell.xib in Resources */,
 				F399DC4026218EA5008FFB11 /* MiniExercise.storyboard in Resources */,
 				F3BD0F23262131BC00E89D75 /* exerciseFinish.storyboard in Resources */,
@@ -453,20 +486,26 @@
 				F3708915261C5B2C0034E509 /* TableMiniExerciseViewController.swift in Sources */,
 				F3BD0F0726212D6B00E89D75 /* ExerciseController.swift in Sources */,
 				F38B4D3F2623DE15004452FD /* SubMaterialMaterialViewController.swift in Sources */,
+				F38B4D4C2623E3FB004452FD /* Result.swift in Sources */,
 				F399DC3526218B1C008FFB11 /* TableViewCellMaterial.swift in Sources */,
 				F3803EB2261D5E6600B594C4 /* Question.swift in Sources */,
 				F399DC3226218AFD008FFB11 /* MaterialViewController.swift in Sources */,
 				F3803EB5261D5FB000B594C4 /* Step.swift in Sources */,
 				F3FE03DF261ED6E3002E35D6 /* StepTableViewController.swift in Sources */,
+				F38B4D562623E8B4004452FD /* SummaryDetailViewController.swift in Sources */,
 				F3BD0EFD26212CAF00E89D75 /* ExerciseListCell.swift in Sources */,
 				F3FE6E34261ADDC000FA01D0 /* ViewController.swift in Sources */,
 				F35BCCA8261F47FD001ACEF7 /* SubMaterialViewController.swift in Sources */,
 				F3FE03DC261EBCDD002E35D6 /* CustomCell.swift in Sources */,
 				671AC2CD261F3FE500FFD824 /* subMaterialCell.swift in Sources */,
+				F38B4D462623E36C004452FD /* Summary.swift in Sources */,
+				F38B4D602623EAFF004452FD /* SumResultViewController.swift in Sources */,
 				F38B4D422623DEA1004452FD /* PreRequisiteViewController.swift in Sources */,
 				F370891B261C65930034E509 /* AnswerCell.swift in Sources */,
 				F3BD0EF026212B3D00E89D75 /* ExerciseListController.swift in Sources */,
 				F3803EAF261D583D00B594C4 /* Answer.swift in Sources */,
+				F38B4D5B2623EAB9004452FD /* ResultTableViewCell.swift in Sources */,
+				F38B4D522623E72F004452FD /* SummaryViewController.swift in Sources */,
 				F399DBFD262188DA008FFB11 /* ProfileViewController.swift in Sources */,
 				F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */,
 				F35BCCAC261F4830001ACEF7 /* subMaterial.swift in Sources */,
@@ -476,6 +515,7 @@
 				F3BD0F18262130E300E89D75 /* ExerciseListDetailCell.swift in Sources */,
 				F3BD0F1026212E9C00E89D75 /* ExerciseListDetailViewController.swift in Sources */,
 				F38B4D3C2623DD4E004452FD /* DetailMaterialViewController.swift in Sources */,
+				F38B4D492623E3BF004452FD /* Detail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
