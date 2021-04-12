@@ -19,10 +19,10 @@ class SubMaterialViewController: UIViewController, UITableViewDelegate, UITableV
         subMaterialExerciseTableView.register(UINib.init(nibName: "subMaterialCell", bundle: nil), forCellReuseIdentifier: "subMaterialCell")
         
         //insert Data
-        let subMaterial1 = subMaterial(numLabel: "1", subMaterialTitle: "Sinus", subMaterialDescription: "Persamaan Sinus")
-        let subMaterial2 = subMaterial(numLabel: "2", subMaterialTitle: "Cosinus", subMaterialDescription: "Persamaan Cosinus")
-        let subMaterial3 = subMaterial(numLabel: "3", subMaterialTitle: "Tangen", subMaterialDescription: "Persamaan Tangen")
-        let subMaterial4 = subMaterial(numLabel: "4", subMaterialTitle: "Penyelesaian Persamaan", subMaterialDescription: "Pada Trigonometri")
+        let subMaterial1 = subMaterial(subMaterialID: 1, materialID: 4, numLabel: "1", subMaterialTitle: "Sinus", subMaterialDescription: "Persamaan Sinus", subMaterialExplanation: "Explanation 1")
+        let subMaterial2 = subMaterial(subMaterialID: 2, materialID: 4, numLabel: "2", subMaterialTitle: "Cosinus", subMaterialDescription: "Persamaan Cosinus", subMaterialExplanation: "Explanation 2")
+        let subMaterial3 = subMaterial(subMaterialID: 3, materialID: 4, numLabel: "3", subMaterialTitle: "Tangen", subMaterialDescription: "Persamaan Tangen", subMaterialExplanation: "Explanation 3")
+        let subMaterial4 = subMaterial(subMaterialID: 4, materialID: 4, numLabel: "4", subMaterialTitle: "Penyelesaian Persamaan", subMaterialDescription: "Pada Trigonometri", subMaterialExplanation: "Explanation 4")
         subMaterials.append(subMaterial1)
         subMaterials.append(subMaterial2)
         subMaterials.append(subMaterial3)

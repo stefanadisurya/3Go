@@ -18,6 +18,9 @@
 		F3803EAF261D583D00B594C4 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3803EAE261D583D00B594C4 /* Answer.swift */; };
 		F3803EB2261D5E6600B594C4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3803EB1261D5E6600B594C4 /* Question.swift */; };
 		F3803EB5261D5FB000B594C4 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3803EB4261D5FB000B594C4 /* Step.swift */; };
+		F38B4D3C2623DD4E004452FD /* DetailMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D3B2623DD4E004452FD /* DetailMaterialViewController.swift */; };
+		F38B4D3F2623DE15004452FD /* SubMaterialMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D3E2623DE15004452FD /* SubMaterialMaterialViewController.swift */; };
+		F38B4D422623DEA1004452FD /* PreRequisiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D412623DEA1004452FD /* PreRequisiteViewController.swift */; };
 		F399DBFA262188BA008FFB11 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F399DBF9262188BA008FFB11 /* Profile.storyboard */; };
 		F399DBFD262188DA008FFB11 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399DBFC262188DA008FFB11 /* ProfileViewController.swift */; };
 		F399DC2F26218ADD008FFB11 /* Material.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F399DC2E26218ADD008FFB11 /* Material.storyboard */; };
@@ -62,6 +65,9 @@
 		F3803EAE261D583D00B594C4 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		F3803EB1261D5E6600B594C4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F3803EB4261D5FB000B594C4 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		F38B4D3B2623DD4E004452FD /* DetailMaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMaterialViewController.swift; sourceTree = "<group>"; };
+		F38B4D3E2623DE15004452FD /* SubMaterialMaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMaterialMaterialViewController.swift; sourceTree = "<group>"; };
+		F38B4D412623DEA1004452FD /* PreRequisiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreRequisiteViewController.swift; sourceTree = "<group>"; };
 		F399DBF9262188BA008FFB11 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		F399DBFC262188DA008FFB11 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F399DC2E26218ADD008FFB11 /* Material.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Material.storyboard; sourceTree = "<group>"; };
@@ -173,6 +179,9 @@
 			children = (
 				F399DC3126218AFD008FFB11 /* MaterialViewController.swift */,
 				F399DC3426218B1C008FFB11 /* TableViewCellMaterial.swift */,
+				F38B4D3B2623DD4E004452FD /* DetailMaterialViewController.swift */,
+				F38B4D3E2623DE15004452FD /* SubMaterialMaterialViewController.swift */,
+				F38B4D412623DEA1004452FD /* PreRequisiteViewController.swift */,
 			);
 			path = "Material Controller";
 			sourceTree = "<group>";
@@ -443,6 +452,7 @@
 				F3BD0F1F262131A200E89D75 /* exerciseFinishViewController.swift in Sources */,
 				F3708915261C5B2C0034E509 /* TableMiniExerciseViewController.swift in Sources */,
 				F3BD0F0726212D6B00E89D75 /* ExerciseController.swift in Sources */,
+				F38B4D3F2623DE15004452FD /* SubMaterialMaterialViewController.swift in Sources */,
 				F399DC3526218B1C008FFB11 /* TableViewCellMaterial.swift in Sources */,
 				F3803EB2261D5E6600B594C4 /* Question.swift in Sources */,
 				F399DC3226218AFD008FFB11 /* MaterialViewController.swift in Sources */,
@@ -453,6 +463,7 @@
 				F35BCCA8261F47FD001ACEF7 /* SubMaterialViewController.swift in Sources */,
 				F3FE03DC261EBCDD002E35D6 /* CustomCell.swift in Sources */,
 				671AC2CD261F3FE500FFD824 /* subMaterialCell.swift in Sources */,
+				F38B4D422623DEA1004452FD /* PreRequisiteViewController.swift in Sources */,
 				F370891B261C65930034E509 /* AnswerCell.swift in Sources */,
 				F3BD0EF026212B3D00E89D75 /* ExerciseListController.swift in Sources */,
 				F3803EAF261D583D00B594C4 /* Answer.swift in Sources */,
@@ -464,6 +475,7 @@
 				F36518372621561000ED25DA /* SolutionViewController.swift in Sources */,
 				F3BD0F18262130E300E89D75 /* ExerciseListDetailCell.swift in Sources */,
 				F3BD0F1026212E9C00E89D75 /* ExerciseListDetailViewController.swift in Sources */,
+				F38B4D3C2623DD4E004452FD /* DetailMaterialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
