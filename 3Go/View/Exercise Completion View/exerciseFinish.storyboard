@@ -41,6 +41,9 @@
                                 <state key="normal" title="More Exercise">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="moreExercise:" destination="4LK-RH-Vms" eventType="touchUpInside" id="3Jk-eb-U2c"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koj-Tj-bRW">
                                 <rect key="frame" x="158.5" y="484" width="97" height="41"/>
@@ -99,11 +102,22 @@
                         <outlet property="robotImage" destination="Uch-Md-xLe" id="2GD-A9-ycP"/>
                         <outlet property="timeElapsedLabel" destination="2Jr-QN-nZ0" id="TKl-MC-8FU"/>
                         <outlet property="timerLabel" destination="koj-Tj-bRW" id="DA9-NN-SZ8"/>
+                        <segue destination="g5S-fu-78x" kind="show" identifier="moreExercise" id="YH1-Sj-KFN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l0y-iZ-OVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="373.91304347826087" y="131.91964285714286"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="rEC-EA-ATX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="g5S-fu-78x" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ZNe-aF-Yf9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXj-yL-lnd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="-1"/>
         </scene>
     </scenes>
     <resources>

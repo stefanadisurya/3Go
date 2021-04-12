@@ -11,6 +11,8 @@ import UIKit
 class ExerciseListController : UIViewController, UISearchBarDelegate, UICollectionViewDelegate, UICollectionViewDataSource{
     
     @IBOutlet weak var exerciseCollectionView: UICollectionView!
+    var results = Result.getInstance()
+    var index : Int?
     
     var materialExercise = [
         "Trigonometry",
@@ -27,6 +29,10 @@ class ExerciseListController : UIViewController, UISearchBarDelegate, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDataCollection()
+//        generateSearchBar()
+    }
+    
+    private func generateSearchBar(){
         navigationItem.searchController = searchBarController
         searchBarController.searchBar.delegate = self
     }
@@ -51,7 +57,15 @@ class ExerciseListController : UIViewController, UISearchBarDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.index = indexPath.row
         performSegue(withIdentifier: "navigateToExerciseList", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "navigateToExerciseList" {
+            let destination = segue.destination as? SubMaterialViewController
+            destination?.myTitle = materialExercise[self.index!]
+        }
     }
     
 }

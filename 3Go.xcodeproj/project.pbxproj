@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4948F08A26242F67004AAF7A /* ResultDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948F08926242F67004AAF7A /* ResultDetail.swift */; };
 		671AC2CD261F3FE500FFD824 /* subMaterialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671AC2CB261F3FE500FFD824 /* subMaterialCell.swift */; };
 		671AC2CE261F3FE500FFD824 /* subMaterialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 671AC2CC261F3FE500FFD824 /* subMaterialCell.xib */; };
 		F35BCCA8261F47FD001ACEF7 /* SubMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35BCCA7261F47FD001ACEF7 /* SubMaterialViewController.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4948F08926242F67004AAF7A /* ResultDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetail.swift; sourceTree = "<group>"; };
 		671AC2CB261F3FE500FFD824 /* subMaterialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subMaterialCell.swift; sourceTree = "<group>"; };
 		671AC2CC261F3FE500FFD824 /* subMaterialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = subMaterialCell.xib; sourceTree = "<group>"; };
 		F35BCCA7261F47FD001ACEF7 /* SubMaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMaterialViewController.swift; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 				F38B4D452623E36C004452FD /* Summary.swift */,
 				F38B4D482623E3BF004452FD /* Detail.swift */,
 				F38B4D4B2623E3FB004452FD /* Result.swift */,
+				4948F08926242F67004AAF7A /* ResultDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				F3BD0F1F262131A200E89D75 /* exerciseFinishViewController.swift in Sources */,
 				F3708915261C5B2C0034E509 /* TableMiniExerciseViewController.swift in Sources */,
 				F3BD0F0726212D6B00E89D75 /* ExerciseController.swift in Sources */,
+				4948F08A26242F67004AAF7A /* ResultDetail.swift in Sources */,
 				F38B4D3F2623DE15004452FD /* SubMaterialMaterialViewController.swift in Sources */,
 				F38B4D4C2623E3FB004452FD /* Result.swift in Sources */,
 				F399DC3526218B1C008FFB11 /* TableViewCellMaterial.swift in Sources */,

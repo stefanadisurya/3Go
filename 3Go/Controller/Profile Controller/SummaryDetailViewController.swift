@@ -65,10 +65,7 @@ class SummaryDetailViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Memanggil View Controller dengan berkas XIB di dalamnya
-        print(indexPath.row)
         performSegue(withIdentifier: "listsegue", sender: indexPath.row)
-
     }
 
 }

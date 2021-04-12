@@ -56,8 +56,11 @@ class ExerciseController: UIViewController, UITableViewDelegate, UITableViewData
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "submitAnswer" {
             let destination = segue.destination as? exerciseFinishViewController
-            destination?.isCorrect = isCorrect
-            destination?.timer = String(format: "%02d:%02d", minute,second)
+                destination?.isCorrect = isCorrect
+                destination?.timer = String(format: "%02d:%02d", minute,second)
+            
+            let newRecord = Result.getInstance()
+            newRecord.addResult(judul: navigationTitle, hasil: isCorrect, timer: String(format: "%02d:%02d", minute,second))
         }
     }
     
@@ -97,7 +100,7 @@ class ExerciseController: UIViewController, UITableViewDelegate, UITableViewData
             let cell = tableView.dequeueReusableCell(withIdentifier: "answerCell", for: indexPath) as! AnswerCell
             cell.answer = answers[indexPath.row]
             submitButton.isEnabled = true
-            submitButton.backgroundColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
+            submitButton.backgroundColor = #colorLiteral(red: 0.4924007058, green: 0.2953394353, blue: 0.8086324334, alpha: 1)
             if cell.answer.content == self.correctAnswer[0] {
                 isCorrect = true
             } else {

@@ -23,7 +23,6 @@ class ExerciseListViewController: UIViewController, UICollectionViewDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDataCollection()
-        
     }
 
     private func setupDataCollection(){

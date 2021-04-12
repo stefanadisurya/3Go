@@ -16,8 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d12-Na-Va4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                                <items>
+                                    <navigationItem title=" Data" id="YzH-cR-vKx"/>
+                                </items>
+                            </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="EQy-cX-rOs">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="832"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="CeX-BL-qhW" id="Mfr-Ju-awm"/>
@@ -28,10 +34,13 @@
                         <viewLayoutGuide key="safeArea" id="igG-1N-ibm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="EQy-cX-rOs" firstAttribute="top" secondItem="igG-1N-ibm" secondAttribute="top" id="483-4L-Nyn"/>
-                            <constraint firstItem="EQy-cX-rOs" firstAttribute="leading" secondItem="igG-1N-ibm" secondAttribute="leading" id="UHX-D9-ho2"/>
-                            <constraint firstItem="EQy-cX-rOs" firstAttribute="trailing" secondItem="igG-1N-ibm" secondAttribute="trailing" id="VxI-Gd-OTW"/>
-                            <constraint firstAttribute="bottom" secondItem="EQy-cX-rOs" secondAttribute="bottom" id="jbC-vq-x7e"/>
+                            <constraint firstItem="EQy-cX-rOs" firstAttribute="top" secondItem="igG-1N-ibm" secondAttribute="top" constant="20" id="FKZ-JN-g7n"/>
+                            <constraint firstAttribute="bottom" secondItem="EQy-cX-rOs" secondAttribute="bottom" id="N6k-0n-O5r"/>
+                            <constraint firstItem="d12-Na-Va4" firstAttribute="trailing" secondItem="igG-1N-ibm" secondAttribute="trailing" id="Pbm-Dc-YDU"/>
+                            <constraint firstItem="EQy-cX-rOs" firstAttribute="trailing" secondItem="igG-1N-ibm" secondAttribute="trailing" id="dwh-Gd-Tl7"/>
+                            <constraint firstItem="d12-Na-Va4" firstAttribute="top" secondItem="igG-1N-ibm" secondAttribute="top" id="eJw-Pz-ySs"/>
+                            <constraint firstItem="d12-Na-Va4" firstAttribute="leading" secondItem="igG-1N-ibm" secondAttribute="leading" id="hkN-ik-C8N"/>
+                            <constraint firstItem="EQy-cX-rOs" firstAttribute="leading" secondItem="igG-1N-ibm" secondAttribute="leading" id="pkA-S1-bz0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="L1S-DH-Osn"/>

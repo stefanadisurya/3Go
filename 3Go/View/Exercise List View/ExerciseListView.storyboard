@@ -17,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Alz-W3-cdl">
-                                <rect key="frame" x="16" y="0.0" width="382" height="862"/>
+                                <rect key="frame" x="16" y="60" width="382" height="802"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cJg-Nf-tt7">
                                     <size key="itemSize" width="184" height="234"/>
-                                    <size key="headerReferenceSize" width="0.0" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="1"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
@@ -34,14 +34,14 @@
                         <viewLayoutGuide key="safeArea" id="bvO-PC-JZR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Alz-W3-cdl" firstAttribute="top" secondItem="isn-3R-ep9" secondAttribute="top" id="Mmb-SS-1ol"/>
-                            <constraint firstItem="Alz-W3-cdl" firstAttribute="bottom" secondItem="bvO-PC-JZR" secondAttribute="bottom" id="a2U-7r-ZCH"/>
-                            <constraint firstItem="Alz-W3-cdl" firstAttribute="leading" secondItem="bvO-PC-JZR" secondAttribute="leading" constant="16" id="mod-ct-Qsu"/>
-                            <constraint firstItem="bvO-PC-JZR" firstAttribute="trailing" secondItem="Alz-W3-cdl" secondAttribute="trailing" constant="16" id="zYA-eO-TRo"/>
+                            <constraint firstItem="Alz-W3-cdl" firstAttribute="top" secondItem="bvO-PC-JZR" secondAttribute="top" constant="16" id="CIy-4q-ddF"/>
+                            <constraint firstItem="Alz-W3-cdl" firstAttribute="leading" secondItem="isn-3R-ep9" secondAttribute="leading" constant="16" id="deA-5Y-mQf"/>
+                            <constraint firstItem="bvO-PC-JZR" firstAttribute="bottom" secondItem="Alz-W3-cdl" secondAttribute="bottom" id="ea8-Ar-hg7"/>
+                            <constraint firstAttribute="trailing" secondItem="Alz-W3-cdl" secondAttribute="trailing" constant="16" id="lDx-SM-ZYO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Exercise" id="U3Q-of-qsL">
-                        <barButtonItem key="backBarButtonItem" title="Kembali" id="D0X-gd-tPz"/>
+                        <barButtonItem key="backBarButtonItem" title="Exercise" id="D0X-gd-tPz"/>
                     </navigationItem>
                     <connections>
                         <outlet property="exerciseCollectionView" destination="Alz-W3-cdl" id="HSq-vY-FPb"/>

@@ -10,6 +10,8 @@ import UIKit
 class SubMaterialViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var subMaterials = [subMaterial]()
+    var myTitle : String = ""
+    
     @IBOutlet weak var subMaterialExerciseTableView: UITableView!
     
     override func viewDidLoad() {
@@ -27,6 +29,8 @@ class SubMaterialViewController: UIViewController, UITableViewDelegate, UITableV
         subMaterials.append(subMaterial2)
         subMaterials.append(subMaterial3)
         subMaterials.append(subMaterial4)
+        
+        title = myTitle
         
         subMaterialExerciseTableView.reloadData()
     }

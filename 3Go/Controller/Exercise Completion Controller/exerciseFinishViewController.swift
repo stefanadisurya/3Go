@@ -39,6 +39,11 @@ class exerciseFinishViewController: UIViewController {
         excerciseButton.layer.cornerRadius = 15
     }
     
+    @IBAction func moreExercise(_ sender: Any) {
+        performSegue(withIdentifier: "moreExercise", sender: nil)
+    }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
