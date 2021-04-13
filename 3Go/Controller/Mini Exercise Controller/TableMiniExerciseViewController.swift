@@ -15,14 +15,27 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
     @IBOutlet weak var wrongLabel: UILabel!
     @IBOutlet weak var nextStep: UIButton!
     
-    var questions: [Question] = [Question(question: "Tentukan himpunan penyelesaian dari persamaan:\nsin 3x = cos 2x; 0 <= x <= 360")]
-    var steps: [String] = ["Ubah cos2x menjadi sin, maka menjadi:"]
-    var answers: [Answer] = Answer.generateData()
-    var correctAnswer: [String] = ["cos 2x -> sin(90 - 2x)"]
     var isCorrect: Bool = false
+    var isFinished: Bool = false
+    var isLastPage: Bool = false
+    var selectedDifficulty: String = "Easy"
+    
+    var easyQuadrant = MiniExercise.easyQuadrant()
+    var mediumQuadrant = MiniExercise.mediumQuadrant()
+    var hardQuadrant = MiniExercise.hardQuadrant()
+    
+    var miniExerciseStep: MiniExercise?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.selectedDifficulty == "Easy" {
+            self.miniExerciseStep = easyQuadrant["Step 1"]
+        } else if self.selectedDifficulty == "Medium" {
+            self.miniExerciseStep = mediumQuadrant["Step 1"]
+        } else {
+            self.miniExerciseStep = hardQuadrant["Step 1"]
+        }
         
         self.stepLabel.text = "Step 1"
         self.tapHere.isHidden = true
@@ -40,13 +53,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
         if section == 0 {
             return "QUESTION"
         } else if section == 1 {
-            if stepLabel.text == "Step 1" {
-                return "STEP 1"
-            } else if stepLabel.text == "Step 2" {
-                return "STEP 2"
-            } else {
-                return "STEP 3"
-            }
+            return "STEP"
         } else {
             return "ANSWER"
         }
@@ -54,26 +61,32 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return questions.count
+            return 1
         } else if section == 1 {
-            return steps.count
+            return 1
         } else {
-            return answers.count
+            return 3
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "questionCell", for: indexPath) as! CustomCell
-            cell.content.text = "\(questions[indexPath.row].question)"
+            if let quest = self.miniExerciseStep?.question.question {
+                cell.content.text = "\(quest)"
+            }
             return cell
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "stepCell", for: indexPath) as! CustomCell
-            cell.content.text = "\(steps[0])"
+            if let stepContent = self.miniExerciseStep?.steps.step {
+                cell.content.text = "\(stepContent)"
+            }
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "answerCell", for: indexPath) as! AnswerCell
-            cell.answer = answers[indexPath.row]
+            if let answerList = self.miniExerciseStep?.answer[indexPath.row] {
+                cell.answer = answerList
+            }
             return cell
         }
     }
@@ -81,10 +94,12 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "answerCell", for: indexPath) as! AnswerCell
-            cell.answer = answers[indexPath.row]
+            if let answerList = self.miniExerciseStep?.answer[indexPath.row] {
+                cell.answer = answerList
+            }
             self.nextStep.isEnabled = true
             self.nextStep.backgroundColor = UIColor(red: 105/255, green: 48/255, blue: 195/255, alpha: 1)
-            if cell.answer.content == self.correctAnswer[0] {
+            if cell.answer.content == self.miniExerciseStep?.correctAnswer[0] {
                 isCorrect = true
             } else {
                 isCorrect = false
@@ -98,28 +113,44 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
         self.stepLabel.text = label
     }
     
-    func loadNewData(from generateData: [Answer], correct: String, step: String) {
-        self.answers = generateData
-        self.correctAnswer.removeAll()
-        self.correctAnswer.append(correct)
-        steps.removeAll()
-        steps.append(step)
+    func loadNewData(from generateData: MiniExercise) {
+        self.miniExerciseStep = generateData
+    }
+    
+    func generateQuadrant() {
+        if self.selectedDifficulty == "Easy" {
+            if self.miniExerciseStep?.id == 1 {
+                self.nextStep.titleLabel?.text = "Done"
+            }
+        } else if self.selectedDifficulty == "Medium" {
+            if self.miniExerciseStep?.id == 2 {
+                loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), label: "\(Step(step: "Step 2").step)")
+                loadNewData(from: mediumQuadrant["Step 2"]!)
+                myTableView.reloadData()
+            } else if self.miniExerciseStep?.id == 3 {
+                self.nextStep.titleLabel?.text = "Done"
+            }
+        } else if self.selectedDifficulty == "Hard" {
+            if self.miniExerciseStep?.id == 4 {
+                loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), label: "\(Step(step: "Step 2").step)")
+                loadNewData(from: hardQuadrant["Step 2"]!)
+                myTableView.reloadData()
+            } else if self.miniExerciseStep?.id == 5 {
+                loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), label: "\(Step(step: "Step 3").step)")
+                loadNewData(from: hardQuadrant["Step 3"]!)
+                myTableView.reloadData()
+            } else if self.miniExerciseStep?.id == 6 {
+                self.nextStep.titleLabel?.text = "Done"
+            }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "navigateToSolution" {
-            if self.stepLabel.text == "Step 1" {
-                let destination = segue.destination as? SolutionViewController
-                destination?.navbarTitle = "Solution"
-                destination?.solution = "Ubah cos2x menjadi sin\n\nUntuk α = sudut lancip, maka (90° − α) merupakan sudut-sudut kuadran I. Dalam trigonometri, relasi sudut dinyatakan sebagai berikut:\nsin (90° − α) = cos α\n\nSehingga pada kuadran satu di mana sudut sisi kurang dari 90°, persamaan cosinus bisa dinyatakan sebagai\nCos x = sin (90° - x)\n\nUbah cos2x menjadi sin, maka jawabannya menjadi:\nCos x = sin (90° - x)"
-            } else if self.stepLabel.text == "Step 2" {
-                let destination = segue.destination as? SolutionViewController
-                destination?.navbarTitle = "Solution"
-                destination?.solution = "2"
-            } else if self.stepLabel.text == "Step 3" {
-                let destination = segue.destination as? SolutionViewController
-                destination?.navbarTitle = "Solution"
-                destination?.solution = "3"
+            let destination = segue.destination as? SolutionViewController
+            destination?.navbarTitle = "Solution"
+            if let solution = self.miniExerciseStep?.solution {
+                destination?.solution = solution
             }
         }
     }
@@ -128,15 +159,16 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
         if isCorrect {
             self.wrongLabel.isHidden = true
             self.tapHere.isHidden = true
-            if self.stepLabel.text == "Step 1" {
-                loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), label: "\(Step(step: "Step 2").step)")
-                loadNewData(from: Answer.generateData2(), correct: "x1 = 24 + (k.72), x2 = 45 + (k.360)", step: "Setelah mengubah cos, cari nilai x1 dan x2. Maka nilainya adalah:")
-                myTableView.reloadData()
-            } else if self.stepLabel.text == "Step 2" {
-                loadNewComponent(isEnabled: false, bgColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), label: "\(Step(step: "Step 3").step)")
-                loadNewData(from: Answer.generateData3(), correct: "(18, 90, 162, 234)", step: "Nilai x1 dan x2 sudah ditemukan. Cari nilai k0, k1, k2, k3 untuk menentukan himpunan. Maka himpunannya menjadi:")
-                myTableView.reloadData()
+            
+            if self.miniExerciseStep?.subMaterialID == 5 {
+                generateQuadrant()
             }
+            
+//            if isLastPage {
+//                performSegue(withIdentifier: "navigateToFinish", sender: nil)
+//            } else {
+//
+//            }
         } else {
             self.wrongLabel.isHidden = false
             self.tapHere.isHidden = false

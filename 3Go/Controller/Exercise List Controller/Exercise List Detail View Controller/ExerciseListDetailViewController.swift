@@ -16,7 +16,7 @@ class ExerciseListDetailViewController: UIViewController, UITableViewDelegate, U
     
     var titleLabel: String = ""
 
-    var currentSegmentIndex = 0
+    var currentSegmentIndex: String = "Easy"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,14 +31,14 @@ class ExerciseListDetailViewController: UIViewController, UITableViewDelegate, U
     @IBAction func diffcultyDidChange(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            currentSegmentIndex = 0
-            print(sender.selectedSegmentIndex)
+            currentSegmentIndex = "Easy"
+            print(currentSegmentIndex)
         case 1:
-            currentSegmentIndex = 1
-            print(sender.selectedSegmentIndex)
+            currentSegmentIndex = "Medium"
+            print(currentSegmentIndex)
         default:
-            currentSegmentIndex = 2
-            print(sender.selectedSegmentIndex)
+            currentSegmentIndex = "Hard"
+            print(currentSegmentIndex)
         }
         exerciseDetailTable.reloadData()
     }

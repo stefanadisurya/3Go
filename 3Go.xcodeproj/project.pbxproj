@@ -14,6 +14,9 @@
 		F35BCCAC261F4830001ACEF7 /* subMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35BCCAB261F4830001ACEF7 /* subMaterial.swift */; };
 		F35BCCB0261F4876001ACEF7 /* SubMaterialTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35BCCAF261F4876001ACEF7 /* SubMaterialTable.storyboard */; };
 		F36518372621561000ED25DA /* SolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36518362621561000ED25DA /* SolutionViewController.swift */; };
+		F368D93B26253B6E0065D8B9 /* MiniExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368D93A26253B6E0065D8B9 /* MiniExercise.swift */; };
+		F368D94026258FE40065D8B9 /* MiniExerciseFinish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F368D93F26258FE40065D8B9 /* MiniExerciseFinish.storyboard */; };
+		F368D9432625900E0065D8B9 /* MiniExerciseFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368D9422625900E0065D8B9 /* MiniExerciseFinishViewController.swift */; };
 		F3708915261C5B2C0034E509 /* TableMiniExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3708914261C5B2C0034E509 /* TableMiniExerciseViewController.swift */; };
 		F370891B261C65930034E509 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370891A261C65930034E509 /* AnswerCell.swift */; };
 		F3803EAF261D583D00B594C4 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3803EAE261D583D00B594C4 /* Answer.swift */; };
@@ -70,6 +73,9 @@
 		F35BCCAB261F4830001ACEF7 /* subMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subMaterial.swift; sourceTree = "<group>"; };
 		F35BCCAF261F4876001ACEF7 /* SubMaterialTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubMaterialTable.storyboard; sourceTree = "<group>"; };
 		F36518362621561000ED25DA /* SolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionViewController.swift; sourceTree = "<group>"; };
+		F368D93A26253B6E0065D8B9 /* MiniExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniExercise.swift; sourceTree = "<group>"; };
+		F368D93F26258FE40065D8B9 /* MiniExerciseFinish.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MiniExerciseFinish.storyboard; sourceTree = "<group>"; };
+		F368D9422625900E0065D8B9 /* MiniExerciseFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniExerciseFinishViewController.swift; sourceTree = "<group>"; };
 		F3708914261C5B2C0034E509 /* TableMiniExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMiniExerciseViewController.swift; sourceTree = "<group>"; };
 		F370891A261C65930034E509 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		F3803EAE261D583D00B594C4 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
@@ -154,6 +160,22 @@
 				F36518362621561000ED25DA /* SolutionViewController.swift */,
 			);
 			path = "Solution View Controller";
+			sourceTree = "<group>";
+		};
+		F368D93D26258FA10065D8B9 /* Mini Exercise Completion View */ = {
+			isa = PBXGroup;
+			children = (
+				F368D93F26258FE40065D8B9 /* MiniExerciseFinish.storyboard */,
+			);
+			path = "Mini Exercise Completion View";
+			sourceTree = "<group>";
+		};
+		F368D93E26258FAB0065D8B9 /* Mini Exercise Completion Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F368D9422625900E0065D8B9 /* MiniExerciseFinishViewController.swift */,
+			);
+			path = "Mini Exercise Completion Controller";
 			sourceTree = "<group>";
 		};
 		F3708911261C56EE0034E509 /* Mini Exercise View */ = {
@@ -365,6 +387,7 @@
 				F38B4D482623E3BF004452FD /* Detail.swift */,
 				F38B4D4B2623E3FB004452FD /* Result.swift */,
 				4948F08926242F67004AAF7A /* ResultDetail.swift */,
+				F368D93A26253B6E0065D8B9 /* MiniExercise.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -372,6 +395,7 @@
 		F3FE6E46261ADDFC00FA01D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F368D93D26258FA10065D8B9 /* Mini Exercise Completion View */,
 				F399DC2D26218AD0008FFB11 /* Material View */,
 				F399DBF7262188A2008FFB11 /* Profile View */,
 				F3BD0F1C2621315B00E89D75 /* Exercise Completion View */,
@@ -388,6 +412,7 @@
 		F3FE6E47261ADE0200FA01D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F368D93E26258FAB0065D8B9 /* Mini Exercise Completion Controller */,
 				F399DC2C26218AB3008FFB11 /* Material Controller */,
 				F399DBF8262188AB008FFB11 /* Profile Controller */,
 				F3BD0F1D2621317800E89D75 /* Exercise Completion Controller */,
@@ -465,6 +490,7 @@
 				F3FE6E37261ADDC000FA01D0 /* Main.storyboard in Resources */,
 				F3BD0F19262130E300E89D75 /* ExerciseListDetailCell.xib in Resources */,
 				F3BD0F0D26212E7000E89D75 /* ExerciseListDetail.storyboard in Resources */,
+				F368D94026258FE40065D8B9 /* MiniExerciseFinish.storyboard in Resources */,
 				F3BD0F0326212D2C00E89D75 /* Exercise.storyboard in Resources */,
 				F3BD0EED26212B0000E89D75 /* ExerciseListView.storyboard in Resources */,
 				F38B4D5C2623EAB9004452FD /* ResultTableViewCell.xib in Resources */,
@@ -485,6 +511,7 @@
 			files = (
 				F399DC3826218B2E008FFB11 /* Material.swift in Sources */,
 				F3BD0EF526212BDB00E89D75 /* ExerciseListViewController.swift in Sources */,
+				F368D93B26253B6E0065D8B9 /* MiniExercise.swift in Sources */,
 				F3BD0F1F262131A200E89D75 /* exerciseFinishViewController.swift in Sources */,
 				F3708915261C5B2C0034E509 /* TableMiniExerciseViewController.swift in Sources */,
 				F3BD0F0726212D6B00E89D75 /* ExerciseController.swift in Sources */,
@@ -515,6 +542,7 @@
 				F35BCCAC261F4830001ACEF7 /* subMaterial.swift in Sources */,
 				F3BD0F132621304500E89D75 /* ExerciseListDetail.swift in Sources */,
 				F3FE6E32261ADDC000FA01D0 /* SceneDelegate.swift in Sources */,
+				F368D9432625900E0065D8B9 /* MiniExerciseFinishViewController.swift in Sources */,
 				F36518372621561000ED25DA /* SolutionViewController.swift in Sources */,
 				F3BD0F18262130E300E89D75 /* ExerciseListDetailCell.swift in Sources */,
 				F3BD0F1026212E9C00E89D75 /* ExerciseListDetailViewController.swift in Sources */,
