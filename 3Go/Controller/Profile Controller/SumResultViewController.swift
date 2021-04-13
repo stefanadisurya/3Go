@@ -68,10 +68,14 @@ class SumResultViewController: UIViewController, UITableViewDataSource, UITableV
            
            // Menetapkan nilai hero ke view di dalam cell
         let result = results[indexPath.row]
+        
+        let green = UIColor(red: 3/255, green: 137/255, blue: 37/255, alpha: 1)
+        let red = UIColor(red: 226/255, green: 34/255, blue: 44/255, alpha: 1)
+        
         cell.judul.text = result.judul
         cell.nomor.text = String(indexPath.row + 1)
         cell.hasil.text = result.hasil! ? "Correct" : "Wrong"
-        cell.hasil?.textColor = result.hasil! ? .green : .red
+        cell.hasil?.textColor = result.hasil! ? green : red
         
         cell.timer.text = result.timer
         
