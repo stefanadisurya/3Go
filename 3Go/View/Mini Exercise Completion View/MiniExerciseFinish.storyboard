@@ -36,7 +36,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="moreExercise:" destination="4LK-RH-Vms" eventType="touchUpInside" id="pm6-UG-MYj"/>
+                                    <action selector="moreExercise:" destination="4LK-RH-Vms" eventType="touchUpInside" id="coJ-Fz-cEf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wohoo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNb-O0-tTd">

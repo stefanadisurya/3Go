@@ -18,7 +18,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
     var isCorrect: Bool = false
     var isFinished: Bool = false
     var isLastPage: Bool = false
-    var selectedDifficulty: String = "Easy"
+    var selectedDifficulty: String = "Hard"
     
     var easyQuadrant = MiniExercise.easyQuadrant()
     var mediumQuadrant = MiniExercise.mediumQuadrant()
@@ -43,6 +43,16 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
         self.nextStep.isEnabled = false
         self.nextStep.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         self.nextStep.layer.cornerRadius = 15
+        
+        self.nextStep.addTarget(self, action: #selector(moveToNextStep), for: .touchUpInside)
+    }
+    
+    @objc func moveToNextStep() {
+        if !isLastPage {
+            navigateToNextStep()
+        } else {
+            performSegue(withIdentifier: "navigateToFinish", sender: nil)
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -121,6 +131,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
         if self.selectedDifficulty == "Easy" {
             if self.miniExerciseStep?.id == 1 {
                 self.nextStep.titleLabel?.text = "Done"
+                isLastPage = true
             }
         } else if self.selectedDifficulty == "Medium" {
             if self.miniExerciseStep?.id == 2 {
@@ -129,6 +140,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
                 myTableView.reloadData()
             } else if self.miniExerciseStep?.id == 3 {
                 self.nextStep.titleLabel?.text = "Done"
+                isLastPage = true
             }
         } else if self.selectedDifficulty == "Hard" {
             if self.miniExerciseStep?.id == 4 {
@@ -141,6 +153,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
                 myTableView.reloadData()
             } else if self.miniExerciseStep?.id == 6 {
                 self.nextStep.titleLabel?.text = "Done"
+                isLastPage = true
             }
         }
     }
@@ -155,7 +168,7 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
         }
     }
     
-    @IBAction func navigateToNextStep(_ sender: UIButton) {
+    func navigateToNextStep() {
         if isCorrect {
             self.wrongLabel.isHidden = true
             self.tapHere.isHidden = true
@@ -164,11 +177,6 @@ class TableMiniExerciseViewController: UIViewController, UITableViewDelegate, UI
                 generateQuadrant()
             }
             
-//            if isLastPage {
-//                performSegue(withIdentifier: "navigateToFinish", sender: nil)
-//            } else {
-//
-//            }
         } else {
             self.wrongLabel.isHidden = false
             self.tapHere.isHidden = false

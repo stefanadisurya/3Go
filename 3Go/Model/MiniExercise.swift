@@ -64,7 +64,7 @@ struct MiniExercise {
                         ],
                 solution: "Karena ada dikuadran 1, maka bentuk  lain dari sin(90°−𝛼) = cos 𝛼"
             ),
-            "Step 3": MiniExercise(id: 6, subMaterialID: 5, question: Question(question: "Sederhanakan bentuk berikut : cos (90°−𝛼)/ sin(90°−𝛼)"), difficulty: "Hard", steps: Step(step: "Tentukan nilai perbandingan dari sin 𝛼/ cos 𝛼!"), correctAnswer: ["cos 𝛼"], answer: [
+            "Step 3": MiniExercise(id: 6, subMaterialID: 5, question: Question(question: "Sederhanakan bentuk berikut : cos (90°−𝛼)/ sin(90°−𝛼)"), difficulty: "Hard", steps: Step(step: "Tentukan nilai perbandingan dari sin 𝛼/ cos 𝛼!"), correctAnswer: ["tan 𝛼"], answer: [
                             Answer(content: "sin 𝛼"),
                             Answer(content: "cos 𝛼"),
                             Answer(content: "tan 𝛼")
