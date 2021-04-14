@@ -9,6 +9,8 @@ import UIKit
 
 class ExerciseFinishExplanationViewController: UIViewController {
     
+    @IBOutlet weak var explanationLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

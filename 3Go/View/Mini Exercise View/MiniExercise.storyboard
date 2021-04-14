@@ -136,9 +136,9 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw1-Gg-YIq">
-                                <rect key="frame" x="16" y="634.5" width="56" height="29"/>
+                                <rect key="frame" x="16" y="634.5" width="181" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="Tap here"/>
+                                <state key="normal" title="Tap here for the Explanation"/>
                                 <connections>
                                     <segue destination="Af5-tb-NQw" kind="presentation" identifier="navigateToSolution" id="PY9-h4-akg"/>
                                 </connections>
