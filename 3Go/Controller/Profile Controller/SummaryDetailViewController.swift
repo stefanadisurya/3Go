@@ -32,7 +32,7 @@ class SummaryDetailViewController: UIViewController, UITableViewDelegate, UITabl
         let myLabel = UILabel()
         myLabel.frame = CGRect(x: 20, y: 10, width: 320, height: 38)
         myLabel.font = UIFont.boldSystemFont(ofSize: 28)
-        myLabel.text = "Trigonometry Equation"
+        myLabel.text = "Persamaan Trigonometri"
 
         let headerView = UIView()
         headerView.addSubview(myLabel)

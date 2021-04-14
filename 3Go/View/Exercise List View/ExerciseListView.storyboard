@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Exercise-->
+        <!--Latihan-->
         <scene sceneID="3da-ts-S6w">
             <objects>
                 <viewController id="VYn-8b-pEA" customClass="ExerciseListController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,8 +40,8 @@
                             <constraint firstAttribute="trailing" secondItem="Alz-W3-cdl" secondAttribute="trailing" constant="16" id="lDx-SM-ZYO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Exercise" id="U3Q-of-qsL">
-                        <barButtonItem key="backBarButtonItem" title="Exercise" id="D0X-gd-tPz"/>
+                    <navigationItem key="navigationItem" title="Latihan" id="U3Q-of-qsL">
+                        <barButtonItem key="backBarButtonItem" title="Latihan" id="D0X-gd-tPz"/>
                     </navigationItem>
                     <connections>
                         <outlet property="exerciseCollectionView" destination="Alz-W3-cdl" id="HSq-vY-FPb"/>

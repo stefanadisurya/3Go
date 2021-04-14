@@ -12,12 +12,12 @@ class ExerciseListViewController: UIViewController, UICollectionViewDelegate, UI
     @IBOutlet weak var exerciseCollectionView: UICollectionView!
     
     var materialExercise = [
-        "Trigonometry",
-        "Trigonometry Integral",
-        "Graph of Trigonometry Functions",
-        "Trigonometry Equation",
-        "Limit of Trigonometry Function",
-        "Derivatives of Trigonometry Function"
+        "Trigonometri",
+        "Integral Trigonometri",
+        "Grafik Fungsi Trigonometri",
+        "Persamaan Trigonometri",
+        "Limit Fungsi Trigonometri",
+        "Turunan Fungsi Trigonometri"
     ]
     
     override func viewDidLoad() {

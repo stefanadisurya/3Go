@@ -15,12 +15,12 @@ class ExerciseListController : UIViewController, UISearchBarDelegate, UICollecti
     var index : Int?
     
     var materialExercise = [
-        "Trigonometry",
-        "Trigonometry Integral",
-        "Graph of Trigonometry Functions",
-        "Trigonometry Equation",
-        "Limit of Trigonometry Function",
-        "Derivatives of Trigonometry Function"
+        "Trigonometri",
+        "Integral Trigonometri",
+        "Grafik Fungsi Trigonometri",
+        "Persamaan Trigonometri",
+        "Limit Fungsi Trigonometri",
+        "Turunan Fungsi Trigonometri"
     ]
     
     let detailExerciseView = ExerciseListViewController()

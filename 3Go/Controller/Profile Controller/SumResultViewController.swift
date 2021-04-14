@@ -74,7 +74,7 @@ class SumResultViewController: UIViewController, UITableViewDataSource, UITableV
         
         cell.judul.text = result.judul
         cell.nomor.text = String(indexPath.row + 1)
-        cell.hasil.text = result.hasil! ? "Correct" : "Wrong"
+        cell.hasil.text = result.hasil! ? "Benar" : "Salah"
         cell.hasil?.textColor = result.hasil! ? green : red
         
         cell.timer.text = result.timer

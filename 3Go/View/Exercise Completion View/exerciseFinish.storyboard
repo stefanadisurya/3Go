@@ -25,8 +25,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image Oops" translatesAutoresizingMaskIntoConstraints="NO" id="Uch-Md-xLe">
                                 <rect key="frame" x="137" y="298.5" width="140" height="131"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Elapsed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jr-QN-nZ0">
-                                <rect key="frame" x="154" y="461.5" width="106.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waktu Pengerjaan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jr-QN-nZ0">
+                                <rect key="frame" x="135" y="461.5" width="144.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="height" constant="50" id="iA7-QE-DHV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <state key="normal" title="More Exercise">
+                                <state key="normal" title="Latihan Lebih Banyak">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -54,9 +54,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSi-7E-iW5">
                                 <rect key="frame" x="136" y="829" width="143" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <state key="normal" title="Explanation">
+                                <state key="normal" title="Penjelasan">
                                     <color key="titleColor" red="0.55364656450000005" green="0.036550108339999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Mnw-pM-9Za" kind="presentation" id="9BG-zQ-M31"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNb-O0-tTd">
                                 <rect key="frame" x="84" y="164" width="246" height="41"/>
@@ -108,6 +111,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l0y-iZ-OVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="373.91304347826087" y="131.91964285714286"/>
+        </scene>
+        <!--Exercise Finish Explanation View Controller-->
+        <scene sceneID="ZBt-1V-rBc">
+            <objects>
+                <viewController id="Mnw-pM-9Za" customClass="ExerciseFinishExplanationViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="27M-16-tKo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAy-8e-1my">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="EQx-9k-BfM"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Penjelasan" id="XYV-ho-eMd"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy6-Y6-P7U">
+                                <rect key="frame" x="16" y="60" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="URc-8F-RO6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iy6-Y6-P7U" firstAttribute="top" secondItem="nAy-8e-1my" secondAttribute="bottom" constant="16" id="3oQ-vq-hzj"/>
+                            <constraint firstItem="nAy-8e-1my" firstAttribute="centerX" secondItem="Iy6-Y6-P7U" secondAttribute="centerX" id="Ba9-ST-vSS"/>
+                            <constraint firstItem="URc-8F-RO6" firstAttribute="trailing" secondItem="Iy6-Y6-P7U" secondAttribute="trailing" constant="16" id="HFe-iV-her"/>
+                            <constraint firstItem="nAy-8e-1my" firstAttribute="top" secondItem="URc-8F-RO6" secondAttribute="top" id="U51-OA-sES"/>
+                            <constraint firstItem="nAy-8e-1my" firstAttribute="leading" secondItem="URc-8F-RO6" secondAttribute="leading" id="kH8-qJ-ppw"/>
+                            <constraint firstItem="Iy6-Y6-P7U" firstAttribute="leading" secondItem="URc-8F-RO6" secondAttribute="leading" constant="16" id="wAa-Y5-esp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKo-bZ-jbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="958"/>
         </scene>
         <!--Main-->
         <scene sceneID="rEC-EA-ATX">

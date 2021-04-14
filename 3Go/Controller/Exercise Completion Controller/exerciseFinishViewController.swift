@@ -28,12 +28,12 @@ class exerciseFinishViewController: UIViewController {
     
     private func setUpComponent(){
         if (isCorrect){
-            oopsLabel.text = "Woho!"
-            incorrectLabel.text = "Your answer is correct"
+            oopsLabel.text = "Wohoo!"
+            incorrectLabel.text = "Jawaban Anda benar!"
             robotImage.image = #imageLiteral(resourceName: "Image Wohoo")
         } else {
             oopsLabel.text = "Oops!"
-            incorrectLabel.text = "Your answer is incorrect"
+            incorrectLabel.text = "Jawaban Anda salah"
             robotImage.image = #imageLiteral(resourceName: "Image Oops")
         }
         excerciseButton.layer.cornerRadius = 15

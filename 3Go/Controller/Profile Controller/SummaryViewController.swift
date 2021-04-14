@@ -14,7 +14,7 @@ class SummaryViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var summaryTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Summary"
+        title = "Ringkasan"
         
         // Menghubungkan heroTableView dengan ke dua metode di bawah
           summaryTableView.dataSource = self

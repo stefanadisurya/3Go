@@ -13,7 +13,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
   
-        title = "Profile"
+        title = "Profil"
         
         ProfileTableView.delegate = self
         ProfileTableView.dataSource = self
@@ -50,7 +50,7 @@ extension ProfileViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Summary"
+        cell.textLabel?.text = "Ringkasan"
         cell.imageView?.image = UIImage( systemName:"star.square.fill")
         cell.imageView?.tintColor = .systemYellow
         cell.accessoryType = .disclosureIndicator

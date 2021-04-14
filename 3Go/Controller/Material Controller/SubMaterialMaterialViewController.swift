@@ -32,7 +32,24 @@ class SubMaterialMaterialViewController: UIViewController, UITableViewDelegate, 
         let subMaterial1 = subMaterial(subMaterialID: 1, materialID: 4, numLabel: "1", subMaterialTitle: "Sinus", subMaterialDescription: "Persamaan Sinus", subMaterialExplanation: "Explanation 1")
         let subMaterial2 = subMaterial(subMaterialID: 2, materialID: 4, numLabel: "2", subMaterialTitle: "Cosinus", subMaterialDescription: "Persamaan Cosinus", subMaterialExplanation: "Explanation 2")
         let subMaterial3 = subMaterial(subMaterialID: 3, materialID: 4, numLabel: "3", subMaterialTitle: "Tangen", subMaterialDescription: "Persamaan Tangen", subMaterialExplanation: "Explanation 3")
-        let subMaterial4 = subMaterial(subMaterialID: 4, materialID: 4, numLabel: "4", subMaterialTitle: "Penyelesaian Persamaan", subMaterialDescription: "Pada Trigonometri", subMaterialExplanation: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+        let subMaterial4 = subMaterial(subMaterialID: 4, materialID: 4, numLabel: "4", subMaterialTitle: "Penyelesaian Persamaan", subMaterialDescription: "Pada Trigonometri", subMaterialExplanation: """
+            Berdasarkan ilustrasi tersebut, dapat diketahui bahwa dalam diagram kartesius terdapat 4 kuadran.
+
+            Berikut merupakan kategorisasi dari keempat kuadaran tersebut:
+
+            1. Kuadran 1 :  0º ≤ x ≤ 90º
+            2. Kuadran 2 :  90º ≤ x ≤ 180º
+            3. Kuadran 3 :  180º ≤ x ≤ 270º
+            4. Kuadran 4 :  270º ≤ x ≤ 360º
+
+            Dari ilustrasi tersebut dapat kita ketahui bahwa pada Kuadaran 1, nilai x dan y pada kuadran 1 bernilai positif, dan diketahui bahwa nilai r (sisi miring) pada segitiga akan selalu bernilai positif dalam kuadran manapun. Dengan demikian, maka dapat kita ketahui bahwa seluruh nilai perbandingan trigonometri dari sudut yang terletak dalam kuadran 1 bersifat positif.
+
+            Untuk nilai ⍺ = sudut lancip (0º ≤ ⍺ ≤ 90º), relasi sudut dalam Kuadran 1 adalah sebagai berikut:
+
+            1. sin (90° − ⍺) = cos ⍺
+            2. cos (90° − ⍺) = sin ⍺
+            3. tan (90° − ⍺) = cot ⍺
+            """)
 //        let subMaterial5 = subMaterial(subMaterialID: 5, materialID: 1, numLabel: "4", subMaterialTitle: "Test1", subMaterialDescription: "Test1", subMaterialExplanation: "Test1")
 //        let subMaterial6 = subMaterial(subMaterialID: 6, materialID: 1, numLabel: "4", subMaterialTitle: "Test2", subMaterialDescription: "Test2", subMaterialExplanation: "Test2")
 //        let subMaterial7 = subMaterial(subMaterialID: 7, materialID: 1, numLabel: "4", subMaterialTitle: "Test3", subMaterialDescription: "Test3", subMaterialExplanation: "Test3")

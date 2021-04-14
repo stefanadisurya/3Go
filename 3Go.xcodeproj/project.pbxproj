@@ -33,6 +33,7 @@
 		F38B4D5B2623EAB9004452FD /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D592623EAB9004452FD /* ResultTableViewCell.swift */; };
 		F38B4D5C2623EAB9004452FD /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38B4D5A2623EAB9004452FD /* ResultTableViewCell.xib */; };
 		F38B4D602623EAFF004452FD /* SumResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B4D5F2623EAFF004452FD /* SumResultViewController.swift */; };
+		F38E0B3E2626DD6000E47139 /* ExerciseFinishExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38E0B3D2626DD6000E47139 /* ExerciseFinishExplanationViewController.swift */; };
 		F399DBFA262188BA008FFB11 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F399DBF9262188BA008FFB11 /* Profile.storyboard */; };
 		F399DBFD262188DA008FFB11 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399DBFC262188DA008FFB11 /* ProfileViewController.swift */; };
 		F399DC2F26218ADD008FFB11 /* Material.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F399DC2E26218ADD008FFB11 /* Material.storyboard */; };
@@ -92,6 +93,7 @@
 		F38B4D592623EAB9004452FD /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		F38B4D5A2623EAB9004452FD /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
 		F38B4D5F2623EAFF004452FD /* SumResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumResultViewController.swift; sourceTree = "<group>"; };
+		F38E0B3D2626DD6000E47139 /* ExerciseFinishExplanationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFinishExplanationViewController.swift; sourceTree = "<group>"; };
 		F399DBF9262188BA008FFB11 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		F399DBFC262188DA008FFB11 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F399DC2E26218ADD008FFB11 /* Material.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Material.storyboard; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				F3BD0F1E262131A200E89D75 /* exerciseFinishViewController.swift */,
+				F38E0B3D2626DD6000E47139 /* ExerciseFinishExplanationViewController.swift */,
 			);
 			path = "Exercise Completion Controller";
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				F3BD0EF026212B3D00E89D75 /* ExerciseListController.swift in Sources */,
 				F3803EAF261D583D00B594C4 /* Answer.swift in Sources */,
 				F38B4D5B2623EAB9004452FD /* ResultTableViewCell.swift in Sources */,
+				F38E0B3E2626DD6000E47139 /* ExerciseFinishExplanationViewController.swift in Sources */,
 				F38B4D522623E72F004452FD /* SummaryViewController.swift in Sources */,
 				F399DBFD262188DA008FFB11 /* ProfileViewController.swift in Sources */,
 				F3FE6E30261ADDC000FA01D0 /* AppDelegate.swift in Sources */,

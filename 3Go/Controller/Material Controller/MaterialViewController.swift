@@ -19,12 +19,12 @@ class MaterialViewController: UIViewController, UITableViewDelegate,UITableViewD
         // Do any additional setup after loading the view.
 
         // Insert Data
-        let Material1 = Material(materialID: 1, materialTitle: "Trygonometry", materialDescription: "Pelajaran tentang sudut, sisi, dan perbandingan antara sudut terhadap sisi", materialImageTitle: "Trygonometry")
-        let Material2 = Material(materialID: 2,materialTitle: "Trygonometric Integral", materialDescription: "Integral juga bisa dioperasikan pada fungsi trigonometri", materialImageTitle: "Trygonometric Integral")
-        let Material3 = Material(materialID: 3, materialTitle: "Graph of Trigonometry Function", materialDescription: "Description", materialImageTitle: "Graph of Trigonometry Function")
-        let Material4 = Material(materialID: 4, materialTitle: "Trigonometry Equation", materialDescription: "Persamaan yang mengandung perbandingan antara sudut trigonometri dalam bentuk x", materialImageTitle: "Trigonometry Equation")
-        let Material5 = Material(materialID: 5, materialTitle: "Limit of Trigonometry Function", materialDescription: "Limit juga dapat digunakan pada fungsi trigonometri", materialImageTitle: "Limit of Trigonometry Function")
-        let Material6 = Material(materialID: 6, materialTitle: "Derivative Trygonometry Function", materialDescription: "Description", materialImageTitle: "Derivative Trygonometry Function")
+        let Material1 = Material(materialID: 1, materialTitle: "Trigonometri", materialDescription: "Pelajaran tentang sudut, sisi, dan perbandingan antara sudut terhadap sisi.", materialImageTitle: "Dasar")
+        let Material2 = Material(materialID: 2,materialTitle: "Integral Trigonometri", materialDescription: "Integral juga bisa dioperasikan pada fungsi trigonometri.", materialImageTitle: "Integral")
+        let Material3 = Material(materialID: 3, materialTitle: "Grafik Funsgi Trigonometri", materialDescription: "Grafik fungsi trigonometri membahas tentang bagaimana cara menentukan sudut-sudut istimewa melalui fungsi trigonometri yang divisulisasikan melalui grafik.", materialImageTitle: "Grafik Fungsi")
+        let Material4 = Material(materialID: 4, materialTitle: "Persamaan Trigonometri", materialDescription: "Persamaan yang mengandung perbandingan antara sudut trigonometri dalam bentuk x.", materialImageTitle: "Fungsi Persamaan")
+        let Material5 = Material(materialID: 5, materialTitle: "Limit Fungsi Trigonometri", materialDescription: "Limit juga dapat digunakan pada fungsi trigonometri.", materialImageTitle: "Limit Fungsi")
+        let Material6 = Material(materialID: 6, materialTitle: "Turunan Fungsi Trigonometri", materialDescription: "Turunan merupakan kebalikan dari integral, dimana pada materi mempelajari tentang fungsi turunan yang umum pada trigonometri.", materialImageTitle: "Turunan Fungsi")
         Materials.append(Material1)
         Materials.append(Material2)
         Materials.append(Material3)
