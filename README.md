@@ -12,9 +12,9 @@ An iOS app that helps senior high-school students to learn Trigonometry. The pro
 <br>
 <br>
 Project was made by:<br>
-- [Stefan Adisurya](https://github.com/stefanadisurya)
-- [Jackie Leonardy](https://github.com/Jackie2024)
-- [Frisky Moraza](https://github.com/friskyfm)
-- [Audrey Aurelia Chang](https://github.com/audreyachang)
-- [Yuliana Aulele](https://github.com/anayuliana31)
-- [Fiona Stefani Limin](https://github.com/youthweh)
+- [Stefan Adisurya](https://github.com/stefanadisurya)<br>
+- [Jackie Leonardy](https://github.com/Jackie2024)<br>
+- [Frisky Moraza](https://github.com/friskyfm)<br>
+- [Audrey Aurelia Chang](https://github.com/audreyachang)<br>
+- [Yuliana Aulele](https://github.com/anayuliana31)<br>
+- [Fiona Stefani Limin](https://github.com/youthweh)<br>
