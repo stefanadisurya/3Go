@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uZo-BN-8DH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vx8-Fy-MsJ">
+            <objects>
+                <tabBarController id="uZo-BN-8DH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YdE-SG-fzc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.41176470590000003" green="0.18823529410000001" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Xxk-55-XdS" kind="relationship" relationship="viewControllers" id="VyR-Tf-W5c"/>
+                        <segue destination="Xmo-oB-fuK" kind="relationship" relationship="viewControllers" id="MmT-kq-VsW"/>
+                        <segue destination="Ah4-Mc-KuY" kind="relationship" relationship="viewControllers" id="2Ca-aX-RpJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6V-ud-EJ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4307" y="-933"/>
+        </scene>
+        <!--Latihan-->
+        <scene sceneID="s58-U1-EZI">
+            <objects>
+                <navigationController storyboardIdentifier="exerciseTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xmo-oB-fuK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Latihan" image="pencil" catalog="system" selectedImage="pencil" id="kCi-YK-eiP"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="aNg-AZ-UJM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9Oj-4K-EyL" kind="relationship" relationship="rootViewController" id="zht-GT-KO5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbk-oS-9qT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3348" y="-933"/>
+        </scene>
+        <!--Materi-->
+        <scene sceneID="7IW-hF-KBn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xxk-55-XdS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Materi" image="book.fill" catalog="system" id="nOe-Yz-BPQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Bpd-mV-kO3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iwn-Y2-mIw" kind="relationship" relationship="rootViewController" id="qZs-FZ-wgD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ju-xx-h5x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3478" y="-1866"/>
+        </scene>
+        <!--Material-->
+        <scene sceneID="wo6-JU-sQD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Material" id="iwn-Y2-mIw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="T1f-1t-3c6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYl-Ma-u1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2446" y="-1866"/>
+        </scene>
+        <!--Profil-->
+        <scene sceneID="Fqj-ta-pU8">
+            <objects>
+                <navigationController id="Ah4-Mc-KuY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profil" image="person.fill" catalog="system" selectedImage="person.fill" id="UjX-kI-kmh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="YHo-R4-3Ee">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3KM-e6-OKe" kind="relationship" relationship="rootViewController" id="Xhz-FP-Jxz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4y-1C-Dpy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3349" y="32"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="c2b-c8-Jjh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="3KM-e6-OKe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="znX-Co-cVF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggn-6e-5wr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2400" y="32"/>
+        </scene>
+        <!--ExerciseListView-->
+        <scene sceneID="YV0-RM-sEH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExerciseListView" id="9Oj-4K-EyL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Y3Y-K4-ktT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KhH-ij-lrD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2446" y="-933"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VYn-8b-pEA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Latihan-->
+        <scene sceneID="3da-ts-S6w">
+            <objects>
+                <viewController id="VYn-8b-pEA" customClass="ExerciseListController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="isn-3R-ep9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Alz-W3-cdl">
+                                <rect key="frame" x="16" y="60" width="382" height="802"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cJg-Nf-tt7">
+                                    <size key="itemSize" width="184" height="234"/>
+                                    <size key="headerReferenceSize" width="0.0" height="1"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="VYn-8b-pEA" id="Jr4-n0-YKN"/>
+                                    <outlet property="delegate" destination="VYn-8b-pEA" id="SR2-xp-ekk"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bvO-PC-JZR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Alz-W3-cdl" firstAttribute="top" secondItem="bvO-PC-JZR" secondAttribute="top" constant="16" id="CIy-4q-ddF"/>
+                            <constraint firstItem="Alz-W3-cdl" firstAttribute="leading" secondItem="isn-3R-ep9" secondAttribute="leading" constant="16" id="deA-5Y-mQf"/>
+                            <constraint firstItem="bvO-PC-JZR" firstAttribute="bottom" secondItem="Alz-W3-cdl" secondAttribute="bottom" id="ea8-Ar-hg7"/>
+                            <constraint firstAttribute="trailing" secondItem="Alz-W3-cdl" secondAttribute="trailing" constant="16" id="lDx-SM-ZYO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Latihan" id="U3Q-of-qsL">
+                        <barButtonItem key="backBarButtonItem" title="Latihan" id="D0X-gd-tPz"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="exerciseCollectionView" destination="Alz-W3-cdl" id="HSq-vY-FPb"/>
+                        <segue destination="nUm-40-sgx" kind="show" identifier="navigateToExerciseList" id="bbb-Fo-Nc6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ve-TK-G0i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931.8840579710147" y="197.54464285714286"/>
+        </scene>
+        <!--SubMaterialTable-->
+        <scene sceneID="8lK-9O-wma">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SubMaterialTable" id="nUm-40-sgx" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="V6I-vJ-03z"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cv-H7-B1F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2743" y="195"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="labelColor"/>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gJF-Cp-egW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MiniExercise-->
+        <scene sceneID="wxf-Ow-tmf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MiniExercise" id="XPj-fp-lcA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="swh-Vy-0z9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RYb-Vv-NZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="-681"/>
+        </scene>
+        <!--ExerciseListDetail-->
+        <scene sceneID="3g9-2a-EPE">
+            <objects>
+                <viewController title="ExerciseListDetail" id="gJF-Cp-egW" customClass="ExerciseListDetailViewController" customModule="_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nkd-PM-7XF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="qaH-WC-Dpu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fIG-WW-816"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fIG-WW-816" firstAttribute="trailing" secondItem="qaH-WC-Dpu" secondAttribute="trailing" id="Q1p-Ky-WYE"/>
+                            <constraint firstItem="qaH-WC-Dpu" firstAttribute="top" secondItem="fIG-WW-816" secondAttribute="top" id="Y8l-kT-e46"/>
+                            <constraint firstItem="fIG-WW-816" firstAttribute="bottom" secondItem="qaH-WC-Dpu" secondAttribute="bottom" id="arr-xw-qlG"/>
+                            <constraint firstItem="qaH-WC-Dpu" firstAttribute="leading" secondItem="fIG-WW-816" secondAttribute="leading" id="bWq-cp-OTn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RgO-Iy-l3g">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Nt7-20-Jvj">
+                            <rect key="frame" x="104" y="5.5" width="206" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Easy"/>
+                                <segment title="Medium"/>
+                                <segment title="Hard"/>
+                            </segments>
+                            <connections>
+                                <action selector="diffcultyDidChange:" destination="gJF-Cp-egW" eventType="valueChanged" id="puG-De-A9w"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="exerciseDetailTable" destination="qaH-WC-Dpu" id="ySb-fb-uPf"/>
+                        <segue destination="XPj-fp-lcA" kind="show" identifier="navigateToMiniExercise" id="yMj-iq-Add"/>
+                        <segue destination="xov-yM-mCd" kind="show" identifier="startExercise" id="UfV-6H-y7n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ia9-xE-Dd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997.10144927536237" y="32.8125"/>
+        </scene>
+        <!--Exercise-->
+        <scene sceneID="1K5-R2-jAC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Exercise" id="xov-yM-mCd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ei4-G3-mRO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lvv-nf-n7s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1718" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
