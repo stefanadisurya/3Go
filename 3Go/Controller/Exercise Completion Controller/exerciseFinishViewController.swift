@@ -54,6 +54,10 @@ class exerciseFinishViewController: UIViewController {
         
     }
 
+    
+    @IBAction func goToPenjelasan(_ sender: Any) {
+        performSegue(withIdentifier: "goToExplanation", sender: nil)
+    }
 }
 
 

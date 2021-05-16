@@ -58,7 +58,8 @@
                                     <color key="titleColor" red="0.55364656450000005" green="0.036550108339999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Mnw-pM-9Za" kind="presentation" id="9BG-zQ-M31"/>
+                                    <action selector="goToPenjelasan:" destination="4LK-RH-Vms" eventType="touchUpInside" id="mNE-Yf-yEO"/>
+                                    <segue destination="Mnw-pM-9Za" kind="presentation" identifier="goToExplanation" id="9BG-zQ-M31"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNb-O0-tTd">
@@ -120,7 +121,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAy-8e-1my">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nAy-8e-1my">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="EQx-9k-BfM"/>
@@ -129,8 +130,9 @@
                                     <navigationItem title="Penjelasan" id="XYV-ho-eMd"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy6-Y6-P7U">
-                                <rect key="frame" x="16" y="60" width="382" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy6-Y6-P7U">
+                                <rect key="frame" x="16" y="74" width="382" height="203"/>
+                                <mutableString key="text">Diketahui bahwa sudut ⍺ terletak pada kuadran 1, oleh karena itu dapat disimpulkan bahwa nilai dari sudut ⍺ adalah 0º ≤ ⍺ ≤ 90º, untuk memperoleh sudut berelasi dengan sin ⍺ yang terletak dalam kuadran 1  maka perlu digunakan persamaan yang menghasilkan nilai sudut yang masih terletak dalam kuadran 1 yaitu (90° − ⍺), maka untuk memperoleh perbandingan trigonometri dari sudut berelasi dengan sin 60°  digunakan rumus sin (90° − ⍺) = cos ⍺</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -139,14 +141,16 @@
                         <viewLayoutGuide key="safeArea" id="URc-8F-RO6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Iy6-Y6-P7U" firstAttribute="top" secondItem="nAy-8e-1my" secondAttribute="bottom" constant="16" id="3oQ-vq-hzj"/>
-                            <constraint firstItem="nAy-8e-1my" firstAttribute="centerX" secondItem="Iy6-Y6-P7U" secondAttribute="centerX" id="Ba9-ST-vSS"/>
+                            <constraint firstItem="Iy6-Y6-P7U" firstAttribute="top" secondItem="nAy-8e-1my" secondAttribute="bottom" constant="30" id="3oQ-vq-hzj"/>
                             <constraint firstItem="URc-8F-RO6" firstAttribute="trailing" secondItem="Iy6-Y6-P7U" secondAttribute="trailing" constant="16" id="HFe-iV-her"/>
                             <constraint firstItem="nAy-8e-1my" firstAttribute="top" secondItem="URc-8F-RO6" secondAttribute="top" id="U51-OA-sES"/>
                             <constraint firstItem="nAy-8e-1my" firstAttribute="leading" secondItem="URc-8F-RO6" secondAttribute="leading" id="kH8-qJ-ppw"/>
                             <constraint firstItem="Iy6-Y6-P7U" firstAttribute="leading" secondItem="URc-8F-RO6" secondAttribute="leading" constant="16" id="wAa-Y5-esp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="explanationLbl" destination="Iy6-Y6-P7U" id="Lfb-sS-Odo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKo-bZ-jbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

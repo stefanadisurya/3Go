@@ -41,6 +41,7 @@ class PreRequisiteViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = preTableView.dequeueReusableCell(withIdentifier: "subMaterialCell", for: indexPath)as! subMaterialCell
         
+        cell.accessoryType = .none
    //     if materialIDKey == self.subMaterials[indexPath.row].materialID {
             let preRequisite = preRequisites[indexPath.row]
             cell.numberLabel.text = preRequisite.numLabel
